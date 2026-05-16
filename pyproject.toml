@@ -1,0 +1,84 @@
+[project]
+name = "agentic-ai-engineering"
+version = "0.1.0"
+description = "Hub portfolio for agentic AI engineering: RAG, indexing, frameworks, HITL, evals, MCP, deployment."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "MIT" }
+authors = [{ name = "Your Name", email = "you@example.com" }]
+# Phase 0: no runtime deps at the root. Per-topic deps live in dependency groups
+# below and get installed selectively with `uv sync --group <name>`.
+dependencies = []
+
+# --- Dependency groups (PEP 735 / uv) -------------------------------------
+# Each phase adds deps to its own group. Keep the root install slim.
+[dependency-groups]
+dev = [
+    "ruff>=0.7",
+    "mypy>=1.13",
+    "pytest>=8",
+    "pytest-asyncio>=0.24",
+    "nbconvert>=7",
+    "nbclient>=0.10",
+    "ipykernel>=6",
+    "jupyter>=1",
+    "pre-commit>=4",
+]
+docs = [
+    "mkdocs>=1.6",
+    "mkdocs-material>=9.5",
+    "mkdocs-jupyter>=0.25",
+]
+# Filled in by their respective phases:
+# foundations = []
+# rag = []
+# indexing = []
+# frameworks = []
+# hitl = []
+# evals = []
+# mcp = []
+# deployment = []
+
+[tool.uv]
+default-groups = ["dev"]
+
+# --- Ruff ----------------------------------------------------------------
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+extend-exclude = ["*.ipynb"]  # notebooks handled separately
+
+[tool.ruff.lint]
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "UP",  # pyupgrade
+    "SIM", # flake8-simplify
+    "RUF", # ruff-specific
+    "N",   # pep8-naming
+]
+ignore = [
+    "E501", # line length handled by formatter
+]
+
+[tool.ruff.format]
+docstring-code-format = true
+
+# --- Mypy ----------------------------------------------------------------
+[tool.mypy]
+python_version = "3.12"
+strict = true
+ignore_missing_imports = true
+exclude = ["build/", ".venv/", "site/"]
+
+# --- Pytest --------------------------------------------------------------
+[tool.pytest.ini_options]
+testpaths = ["tests", "**/tests"]
+asyncio_mode = "auto"
+addopts = "-ra --strict-markers"
+markers = [
+    "slow: marks tests as slow (deselect with '-m \"not slow\"')",
+    "needs_api_key: requires real LLM provider credentials",
+]

@@ -1,0 +1,92 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# --- uv / virtualenv ---
+.venv/
+venv/
+env/
+ENV/
+.uv-cache/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+profile_default/
+ipython_config.py
+
+# --- Test / coverage ---
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+.hypothesis/
+
+# --- Mypy / Ruff ---
+.mypy_cache/
+.ruff_cache/
+.dmypy.json
+dmypy.json
+
+# --- MkDocs ---
+site/
+
+# --- Editors ---
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# --- Secrets / env ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+
+# --- LLM eval cache (committed selectively; large files excluded) ---
+.llm-cache/
+*.cache.jsonl
+
+# --- Local corpora / data ---
+benchmarks/corpus/data/
+benchmarks/corpus/raw/
+data/
+*.parquet
+*.duckdb
+
+# --- Node (for 07-deployment-patterns/04-ts-vercel-ai-sdk-chat) ---
+node_modules/
+.next/
+.turbo/
+*.log
+
+# --- Docker ---
+.docker-data/

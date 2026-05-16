@@ -1,0 +1,68 @@
+site_name: agentic-ai-engineering
+site_description: Hands-on portfolio of agentic AI engineering — RAG, indexing, frameworks, HITL, evals, MCP, deployment.
+site_url: https://example.com/agentic-ai-engineering/
+repo_url: https://github.com/your-handle/agentic-ai-engineering
+repo_name: agentic-ai-engineering
+edit_uri: edit/main/docs/
+
+theme:
+  name: material
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.expand
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - content.code.annotate
+    - toc.integrate
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - footnotes
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - tables
+  - toc:
+      permalink: true
+
+plugins:
+  - search
+  - mkdocs-jupyter:
+      include_source: true
+      ignore_h1_titles: true
+
+nav:
+  - Home: index.md
+  - Learning path: learning-path.md
+  - Skills matrix: skills-matrix.md
+  - Architecture decisions: architecture-decisions/

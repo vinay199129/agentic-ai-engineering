@@ -1,0 +1,60 @@
+name: Execute Notebooks
+
+on:
+  pull_request:
+    paths:
+      - "**/*.ipynb"
+      - ".github/workflows/notebooks.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Set up Python
+        run: uv python install 3.12
+
+      - name: Install dev deps
+        run: uv sync --group dev
+
+      - name: Detect changed notebooks
+        id: changed
+        shell: bash
+        run: |
+          set -euo pipefail
+          base="${{ github.event.pull_request.base.sha }}"
+          head="${{ github.event.pull_request.head.sha }}"
+          changed=$(git diff --name-only --diff-filter=AM "$base" "$head" -- '*.ipynb' || true)
+          {
+            echo "files<<EOF"
+            echo "$changed"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Execute changed notebooks
+        if: steps.changed.outputs.files != ''
+        env:
+          # CI must not hit live LLMs. The shared LLM shim respects this flag
+          # and replays cached responses from `.llm-cache/`.
+          LLM_CACHE_ONLY: "1"
+        shell: bash
+        run: |
+          set -euo pipefail
+          while IFS= read -r nb; do
+            [ -z "$nb" ] && continue
+            echo "::group::Executing $nb"
+            uv run jupyter nbconvert --to notebook --execute --inplace "$nb" \
+              --ExecutePreprocessor.timeout=600
+            echo "::endgroup::"
+          done <<< "${{ steps.changed.outputs.files }}"
