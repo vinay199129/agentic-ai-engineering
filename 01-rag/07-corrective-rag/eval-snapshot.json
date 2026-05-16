@@ -1,0 +1,15 @@
+{
+  "technique": "corrective-rag",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:17:43Z",
+  "metrics": {
+    "n_subset": 5,
+    "verdict_accuracy": 1.0,
+    "route_distribution": {
+      "confident": 2,
+      "ambiguous": 1,
+      "insufficient": 2
+    }
+  }
+}

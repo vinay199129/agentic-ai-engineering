@@ -1,0 +1,23 @@
+{
+  "technique": "long-context-rag",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:18:31Z",
+  "metrics": {
+    "n_subset_docs": 5,
+    "n_chunks": 10,
+    "n_questions": 15,
+    "recall@1": {
+      "bare": 0.6667,
+      "contextual": 0.8
+    },
+    "recall@3": {
+      "bare": 0.8667,
+      "contextual": 0.8667
+    },
+    "recall@5": {
+      "bare": 0.8667,
+      "contextual": 1.0
+    }
+  }
+}

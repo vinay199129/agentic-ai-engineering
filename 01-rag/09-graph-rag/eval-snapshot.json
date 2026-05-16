@@ -1,0 +1,22 @@
+{
+  "technique": "graph-rag",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:18:05Z",
+  "metrics": {
+    "n_docs": 10,
+    "n_entities": 36,
+    "n_edges": 60,
+    "n_communities": 6,
+    "community_sizes": [
+      10,
+      7,
+      7,
+      4,
+      4,
+      4
+    ],
+    "n_multi_doc_communities": 3,
+    "avg_entities_per_doc": 4.0
+  }
+}

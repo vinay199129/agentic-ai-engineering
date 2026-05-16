@@ -1,0 +1,27 @@
+{
+  "technique": "hybrid-search",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:16:59Z",
+  "metrics": {
+    "n_docs": 10,
+    "n_questions": 26,
+    "per_retriever": {
+      "dense": {
+        "recall@1": 0.6923,
+        "recall@3": 0.8846,
+        "recall@5": 0.9615
+      },
+      "bm25": {
+        "recall@1": 0.9231,
+        "recall@3": 1.0,
+        "recall@5": 1.0
+      },
+      "hybrid_rrf": {
+        "recall@1": 0.8846,
+        "recall@3": 0.9615,
+        "recall@5": 1.0
+      }
+    }
+  }
+}

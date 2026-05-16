@@ -1,0 +1,16 @@
+{"key": "badfe6f4f096bc739fd2f8a41456c9ac", "value": {"content": "yes", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "1919b50899937dc8466a2589b4c2d405", "value": {"content": "no", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "aeb0b5ad7634d8502d594a0068e0008f", "value": {"content": "no", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "27691ff3d6f0d7c23a653d86bf7e901f", "value": {"content": "RA-MoE uses 47B total parameters with two experts active per token (~13B active params).\nSUPPORT: yes", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "ddf2c21cd77ad02a4c606579ef0222f3", "value": {"content": "no", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "4dfecb95425981395cd92a217b6958b8", "value": {"content": "no", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "b27010d36e25b9f8d0fce0290f933dfa", "value": {"content": "no", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "3bd6d3bdcc2eafcb90eb6fcf644b1a39", "value": {"content": "The Tokenizer-Equity Index (TEI) measures cross-lingual fairness by quantifying token-fertility imbalance.\nSUPPORT: yes", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "815392c4aceff5c626cab2ab88d9ab05", "value": {"content": "no", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "c5181bc05a9f76812f49834b9e75160c", "value": {"content": "no", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "539e3f3b416cc2b0736065e8848ddcb0", "value": {"content": "no", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "d7ea85c4fc0da79c3f9fda91e2c677d0", "value": {"content": "Distill-Reason transfers chain-of-thought reasoning from large teachers to small students with ~80% of the gain at ~7% of the cost.\nSUPPORT: yes", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "548a807cfd65b005d66a03190ef2adfc", "value": {"content": "no", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "1c7538ff0696a6aff9f63936664458ca", "value": {"content": "no", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "33f9b9d0c0a128b8d01e937c1da4b83e", "value": {"content": "no", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "b0833c54b32d37e24330fb4c91d536a6", "value": {"content": "I don't know \u2014 none of the retrieved passages discuss this topic.\nSUPPORT: no", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}

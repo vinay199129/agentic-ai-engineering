@@ -1,0 +1,34 @@
+{
+  "technique": "query-transformation",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:17:21Z",
+  "metrics": {
+    "n_subset_hyde_and_vanilla": 11,
+    "n_subset_multi_query": 3,
+    "n_subset_step_back": 3,
+    "n_subset_decomposition": 3,
+    "per_strategy": {
+      "vanilla": {
+        "recall@1": 0.7273,
+        "recall@3": 0.9091
+      },
+      "hyde": {
+        "recall@1": 0.7273,
+        "recall@3": 0.7273
+      },
+      "multi_query": {
+        "recall@1": 0.6667,
+        "recall@3": 1.0
+      },
+      "step_back": {
+        "recall@1": 1.0,
+        "recall@3": 1.0
+      },
+      "decomposition": {
+        "recall@1": 0.3333,
+        "recall@3": 0.3333
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "technique": "agentic-rag",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:17:54Z",
+  "metrics": {
+    "n_examples": 3,
+    "route_accuracy": 1.0,
+    "answer_non_empty_rate": 1.0,
+    "route_distribution": {
+      "search_papers": 1,
+      "lookup_doc": 1,
+      "answer_directly": 1
+    }
+  }
+}

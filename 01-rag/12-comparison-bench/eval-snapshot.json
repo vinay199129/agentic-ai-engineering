@@ -1,0 +1,84 @@
+{
+  "technique": "comparison-bench",
+  "version": "0.1.0",
+  "dataset": "01-rag/*/eval-snapshot.json",
+  "run_id": "2026-05-16T20:18:41Z",
+  "metrics": {
+    "n_techniques_indexed": 12,
+    "n_with_value": 12,
+    "rows": [
+      {
+        "leaf": "00-naive-rag",
+        "technique": "naive-rag",
+        "metric": "context_recall",
+        "value": 0.75
+      },
+      {
+        "leaf": "01-chunking-strategies",
+        "technique": "chunking-strategies",
+        "metric": "avg chunks/doc (fixed)",
+        "value": 3.2
+      },
+      {
+        "leaf": "02-embedding-comparison",
+        "technique": "embedding-comparison",
+        "metric": "recall@3 (large-512)",
+        "value": 0.9231
+      },
+      {
+        "leaf": "03-hybrid-search",
+        "technique": "hybrid-search",
+        "metric": "recall@3 (hybrid RRF)",
+        "value": 0.9615
+      },
+      {
+        "leaf": "04-reranking",
+        "technique": "reranking",
+        "metric": "recall@1 (LLM reranker)",
+        "value": 0.9615
+      },
+      {
+        "leaf": "05-query-transformation",
+        "technique": "query-transformation",
+        "metric": "recall@3 (HyDE)",
+        "value": 0.7273
+      },
+      {
+        "leaf": "06-self-rag",
+        "technique": "self-rag",
+        "metric": "refusal_rate (unanswerable)",
+        "value": 1.0
+      },
+      {
+        "leaf": "07-corrective-rag",
+        "technique": "corrective-rag",
+        "metric": "verdict_accuracy",
+        "value": 1.0
+      },
+      {
+        "leaf": "08-agentic-rag",
+        "technique": "agentic-rag",
+        "metric": "route_accuracy",
+        "value": 1.0
+      },
+      {
+        "leaf": "09-graph-rag",
+        "technique": "graph-rag",
+        "metric": "n_communities",
+        "value": 6
+      },
+      {
+        "leaf": "10-multimodal-rag",
+        "technique": "multimodal-rag",
+        "metric": "recall@3 (joint)",
+        "value": 0.8462
+      },
+      {
+        "leaf": "11-long-context-rag",
+        "technique": "long-context-rag",
+        "metric": "recall@3 (contextual)",
+        "value": 0.8667
+      }
+    ]
+  }
+}

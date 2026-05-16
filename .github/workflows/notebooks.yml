@@ -25,8 +25,8 @@ jobs:
       - name: Set up Python
         run: uv python install 3.12
 
-      - name: Install dev deps
-        run: uv sync --group dev
+      - name: Install dev + foundations + rag deps
+        run: uv sync --group dev --group foundations --group rag
 
       - name: Detect changed notebooks
         id: changed

@@ -1,0 +1,14 @@
+{
+  "technique": "prompt-patterns",
+  "version": "0.1.0",
+  "dataset": "synthetic/RA-MoE-abstract",
+  "run_id": "2026-05-16T19:51:43Z",
+  "metrics": {
+    "prompt_chain_pass": true,
+    "routing_pass": true,
+    "parallelization_pass": true,
+    "orchestrator_workers_pass": true,
+    "evaluator_optimizer_pass": true,
+    "all_patterns_pass_rate": 1.0
+  }
+}

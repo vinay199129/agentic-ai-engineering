@@ -1,0 +1,41 @@
+name: Eval Regression
+
+on:
+  pull_request:
+    paths:
+      - "**/eval-snapshot.json"
+      - "**/eval.py"
+      - ".github/workflows/eval-regression.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  diff-snapshots:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up uv
+        uses: astral-sh/setup-uv@v3
+        with:
+          enable-cache: true
+
+      - name: Set up Python
+        run: uv python install 3.12
+
+      - name: Install dev deps
+        run: uv sync --group dev
+
+      - name: Compare snapshots against base
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+          TOLERANCE: "0.05"
+        shell: bash
+        run: |
+          set -euo pipefail
+          uv run python .github/scripts/diff_eval_snapshots.py \
+            --base "$BASE_SHA" --head "$HEAD_SHA" --tolerance "$TOLERANCE"

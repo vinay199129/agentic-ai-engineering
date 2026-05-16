@@ -1,0 +1,13 @@
+{
+  "technique": "naive-rag",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T19:51:43Z",
+  "metrics": {
+    "context_recall": 0.75,
+    "refusal_rate_on_unanswerable": 0.75,
+    "answer_exact_match_direct": 0.9545,
+    "n_queries": 30,
+    "k": 3
+  }
+}

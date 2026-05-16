@@ -71,9 +71,10 @@ Thumbs.db
 *.key
 secrets/
 
-# --- LLM eval cache (committed selectively; large files excluded) ---
-.llm-cache/
-*.cache.jsonl
+# --- LLM eval cache ---
+# Cache files are intentionally COMMITTED so CI can replay notebooks offline
+# under LLM_CACHE_ONLY=1. Keep them small and deterministic.
+# (Nothing ignored here.)
 
 # --- Local corpora / data ---
 benchmarks/corpus/data/

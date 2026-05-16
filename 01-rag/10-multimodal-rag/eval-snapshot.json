@@ -1,0 +1,22 @@
+{
+  "technique": "multimodal-rag",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:18:20Z",
+  "metrics": {
+    "n_docs": 10,
+    "n_questions": 26,
+    "recall@1": {
+      "text": 0.6923,
+      "joint": 0.5
+    },
+    "recall@3": {
+      "text": 0.8846,
+      "joint": 0.8462
+    },
+    "recall@5": {
+      "text": 0.9615,
+      "joint": 0.9231
+    }
+  }
+}

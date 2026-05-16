@@ -1,0 +1,27 @@
+{
+  "technique": "embedding-comparison",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T19:51:45Z",
+  "metrics": {
+    "n_docs": 10,
+    "n_questions": 26,
+    "per_config": {
+      "tiny-128": {
+        "recall@1": 0.6923,
+        "recall@3": 0.9231,
+        "recall@5": 1.0
+      },
+      "balanced-256": {
+        "recall@1": 0.6923,
+        "recall@3": 0.9615,
+        "recall@5": 1.0
+      },
+      "large-512": {
+        "recall@1": 0.8077,
+        "recall@3": 0.9231,
+        "recall@5": 1.0
+      }
+    }
+  }
+}

@@ -108,7 +108,7 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the full leaf-folder template.
 
 ## 📦 Status
 
-**Phase 0 (scaffolding) complete.** Topic folders are stubs that will be filled in phase by phase. See [`PLAN.md`](PLAN.md) for the full roadmap.
+**Phases 0–2 complete.** Foundations + 13 RAG techniques + shared infra + eval pipeline are all in. See [`PLAN.md`](PLAN.md) for the full roadmap and [`01-rag/README.md`](01-rag/README.md) for the live leaderboard.
 
 Building in public — follow along on:
 - LinkedIn: *(link)*

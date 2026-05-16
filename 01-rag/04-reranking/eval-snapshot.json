@@ -1,0 +1,15 @@
+{
+  "technique": "reranking",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:17:10Z",
+  "metrics": {
+    "n_questions": 26,
+    "k_first_stage": 5,
+    "recall@1": {
+      "no_rerank": 0.6923,
+      "crossenc": 0.9231,
+      "llm": 0.9615
+    }
+  }
+}

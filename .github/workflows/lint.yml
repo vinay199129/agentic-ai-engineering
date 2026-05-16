@@ -22,8 +22,8 @@ jobs:
       - name: Set up Python
         run: uv python install 3.12
 
-      - name: Install dev deps
-        run: uv sync --group dev
+      - name: Install foundations + rag deps
+        run: uv sync --group dev --group foundations --group rag
 
       - name: Ruff lint
         run: uv run ruff check .
@@ -32,6 +32,4 @@ jobs:
         run: uv run ruff format --check .
 
       - name: Mypy
-        # Phase 0: no Python sources yet; soft-fail until first phase lands code.
-        # Remove the `|| echo` once `shared/` exists.
-        run: uv run mypy . || echo "mypy soft-fail while no Python sources exist"
+        run: uv run mypy .

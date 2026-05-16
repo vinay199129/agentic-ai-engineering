@@ -29,10 +29,36 @@ docs = [
     "mkdocs-material>=9.5",
     "mkdocs-jupyter>=0.25",
 ]
-# Filled in by their respective phases:
-# foundations = []
-# rag = []
-# indexing = []
+foundations = [
+    "litellm>=1.52",
+    "pydantic>=2.9",
+    "python-dotenv>=1.0",
+]
+rag = [
+    "litellm>=1.52",
+    "pydantic>=2.9",
+    "python-dotenv>=1.0",
+    "numpy>=1.26",
+    "scikit-learn>=1.5",
+    "rank-bm25>=0.2.2",
+    "tiktoken>=0.8",
+    "networkx>=3.3",
+    "matplotlib>=3.9",
+    "pillow>=10.4",
+]
+corpus = [
+    # Only needed to *fetch* the canonical arxiv corpus locally; CI never runs this.
+    "arxiv>=2.1",
+    "pypdf>=5.0",
+]
+indexing = [
+    "numpy>=1.26",
+    "scikit-learn>=1.5",
+    "matplotlib>=3.9",
+    "rank-bm25>=0.2.2",
+    "networkx>=3.3",
+    "faiss-cpu>=1.8",
+]
 # frameworks = []
 # hitl = []
 # evals = []
@@ -71,7 +97,12 @@ docstring-code-format = true
 python_version = "3.12"
 strict = true
 ignore_missing_imports = true
-exclude = ["build/", ".venv/", "site/"]
+explicit_package_bases = true
+# Each leaf folder ships its own `eval.py` — they share a filename but live in
+# separate dirs, so mypy sees them as duplicate top-level modules. They are
+# short procedural scripts whose dependencies (shared/, benchmarks/) ARE type
+# checked, so exclude the script files themselves rather than fight mypy.
+exclude = ["build/", ".venv/", "site/", ".*/eval\\.py$"]
 
 # --- Pytest --------------------------------------------------------------
 [tool.pytest.ini_options]

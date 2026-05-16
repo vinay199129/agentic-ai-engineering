@@ -1,0 +1,39 @@
+{
+  "technique": "chunking-strategies",
+  "version": "0.1.0",
+  "dataset": "benchmarks/corpus/metadata.jsonl",
+  "run_id": "2026-05-16T19:51:44Z",
+  "metrics": {
+    "n_docs": 10,
+    "per_strategy": {
+      "fixed": {
+        "avg_chunks_per_doc": 3.2,
+        "max_chunks_per_doc": 4,
+        "avg_chunk_chars": 219.66,
+        "max_chunk_chars": 240,
+        "total_chunks": 32
+      },
+      "recursive": {
+        "avg_chunks_per_doc": 3.8,
+        "max_chunks_per_doc": 4,
+        "avg_chunk_chars": 160.34,
+        "max_chunk_chars": 240,
+        "total_chunks": 38
+      },
+      "semantic": {
+        "avg_chunks_per_doc": 2.3,
+        "max_chunks_per_doc": 3,
+        "avg_chunk_chars": 266.78,
+        "max_chunk_chars": 522,
+        "total_chunks": 23
+      },
+      "propositional_proxy": {
+        "avg_chunks_per_doc": 4.3,
+        "max_chunks_per_doc": 5,
+        "avg_chunk_chars": 142.23,
+        "max_chunk_chars": 241,
+        "total_chunks": 43
+      }
+    }
+  }
+}

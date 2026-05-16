@@ -1,0 +1,10 @@
+{"key": "ba2c0601c64118e89b9e2015450d0480", "value": {"content": "confident", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "0f3229554453bd037140766341554867", "value": {"content": "RA-MoE has 47B total parameters with two experts active per token (~13B active).", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "bcaa66a1ffbe01ffc48641f1fa4beca2", "value": {"content": "confident", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "cbbc97a1d8dbe5522e9babce59562875", "value": {"content": "Distill-Reason transfers CoT reasoning from large teachers to ~7B-parameter students, recovering ~80% of the gain.", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "853e3646c48ee6bf01241f13c719fb31", "value": {"content": "ambiguous", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "9ff3d450ecf1cab999a613f9bb2426ec", "value": {"content": "Polyglot-Switch adds language-conditioned routing on top of a Mixture-of-Experts backbone.", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "af1272b1d5a2fb2225b4925b2b09cfe6", "value": {"content": "insufficient", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "e86d3aaea4856b47ba424f9bff4ed157", "value": {"content": "I cannot answer this question from the available sources.", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "3c6b56bd5bb36a96d9da5d53331d9d12", "value": {"content": "insufficient", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}
+{"key": "a798da7806f8689ef83f4d0198ba1d14", "value": {"content": "Neither the corpus nor the supplemental search provides a measurement.", "finish_reason": "stop", "model": "openai/gpt-4o-mini", "raw": {}, "tool_calls": []}}

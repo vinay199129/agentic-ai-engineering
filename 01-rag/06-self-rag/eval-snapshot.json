@@ -1,0 +1,14 @@
+{
+  "technique": "self-rag",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:17:33Z",
+  "metrics": {
+    "n_subset": 4,
+    "n_answerable": 3,
+    "n_unanswerable": 1,
+    "answerable_support_rate": 1.0,
+    "answerable_kept_doc_recall": 0.3333,
+    "unanswerable_refusal_rate": 1.0
+  }
+}
