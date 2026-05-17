@@ -12,6 +12,33 @@ This is a **learning-first hub repo**. Each topic area is a folder with runnable
 - 🚀 **[`production-rag-pipeline`](../production-rag-pipeline)** — production hybrid RAG with self-hosted Langfuse, RAGAS regression in CI, Streamlit chat, Fly.io deploy
 - 🤖 **[`multi-agent-research-system`](../multi-agent-research-system)** — LangGraph supervisor + 5 specialists, HITL approval gates, MCP-only tools, Postgres checkpointer with time-travel
 
+```mermaid
+flowchart LR
+    Hub[agentic-ai-engineering<br/>~50 leaves · 50 eval-snapshots]
+    DD1[production-rag-pipeline<br/>deep-dive #1]
+    DD2[multi-agent-research-system<br/>deep-dive #2]
+    Hub -- shared LLM shim + corpus --> DD1
+    Hub -- hitl.py + mcp_core.py + framework task --> DD2
+    Hub -. eval-snapshot regression gate .- CI[(CI)]
+    DD1 -. same gate .- CI
+    DD2 -. same gate .- CI
+```
+
+---
+
+## 👀 If you have 5 minutes
+
+Read these in order:
+
+1. **[`docs/dashboard.md`](docs/dashboard.md)** — what shipped at a glance: 8 phases, 52 leaves, headline metrics per phase, auto-regenerated from committed `eval-snapshot.json` files.
+2. **[`docs/leaderboard.md`](docs/leaderboard.md)** — every leaf with its committed eval numbers in one table.
+3. **[`docs/leaves/`](docs/leaves/)** — every leaf's README + notebook **rendered inside the site** (no more clicking into GitHub). Browse `Dashboard → Leaderboard → click any leaf row` to read the full technique write-up + interactive notebook.
+4. **[`docs/from-scratch.md`](docs/from-scratch.md)** — what we re-implemented instead of importing (~4 200 lines: in-process MCP server/client, mini-LangGraph with interrupt + time-travel, HNSW/IVF-PQ/BM25/ColBERT in NumPy, RAGAS-style metrics, LLM-as-judge, regression gate).
+5. **[`docs/case-studies.md`](docs/case-studies.md)** — every leaf mapped to a real production problem (customer support, internal-API agents, code-aware Q&A, healthcare HITL, DevOps runbooks).
+6. **[`docs/browser-execution.md`](docs/browser-execution.md)** — 39 of 52 notebooks **execute in your browser** with zero install via the bundled JupyterLite site (cached LLM responses; no API keys).
+
+If you have 30 minutes: also skim **[`01-rag/12-comparison-bench/`](01-rag/12-comparison-bench/)** (RAG leaderboard), **[`03-agentic-frameworks/07-framework-comparison/`](03-agentic-frameworks/07-framework-comparison/)** (same agent in 7 frameworks), **[`docs/deep-dives/`](docs/deep-dives/)** (5 long-form articles), and **[`docs/architecture-decisions/`](docs/architecture-decisions/)** (6 ADRs).
+
 ---
 
 ## 🧭 Quick navigation
@@ -29,23 +56,25 @@ This is a **learning-first hub repo**. Each topic area is a folder with runnable
 
 ---
 
-## 🎯 Skills matrix *(populated as phases ship)*
+## 🎯 Skills matrix *(complete; full table in [`docs/skills-matrix.md`](docs/skills-matrix.md))*
 
 | Skill | Where to see it |
 |---|---|
-| RAG pipeline design | `01-rag/`, `production-rag-pipeline` |
+| RAG pipeline design (13 variants benchmarked) | `01-rag/`, `production-rag-pipeline` |
 | Vector-DB selection & benchmarking | `02-indexing/00-vector-db-comparison/` |
-| Index internals (HNSW, IVF-PQ) | `02-indexing/01-hnsw-deep-dive/`, `02-indexing/02-ivf-pq-quantization/` |
-| Stateful agents (LangGraph) | `03-agentic-frameworks/01-langgraph/`, `multi-agent-research-system` |
+| Index internals from scratch (HNSW, IVF-PQ, ColBERT) | `02-indexing/01-hnsw-deep-dive/`, `02-indexing/02-ivf-pq-quantization/`, `02-indexing/06-colbert-late-interaction/` |
+| GraphRAG end-to-end | `01-rag/09-graph-rag/`, `02-indexing/04-knowledge-graph-index/` |
+| Stateful agents (LangGraph + checkpointer) | `03-agentic-frameworks/01-langgraph/`, `multi-agent-research-system` |
 | Type-safe agents (Pydantic AI) | `03-agentic-frameworks/02-pydantic-ai/` |
 | Multi-agent orchestration | `03-agentic-frameworks/03-crewai/`, `multi-agent-research-system` |
-| HITL workflow design | `04-human-in-the-loop/`, `multi-agent-research-system` |
-| Eval-driven development | `05-evals-and-observability/`, both deep-dives |
-| Observability (Langfuse) | `05-evals-and-observability/02-langfuse-tracing/`, both deep-dives |
-| MCP server + client | `06-mcp/`, `multi-agent-research-system` |
-| FastAPI streaming + SSE | `07-deployment-patterns/00-fastapi-streaming-agent/` |
-| Containerized deploy | `07-deployment-patterns/02-docker-compose-stack/`, `production-rag-pipeline` |
-| TypeScript / edge | `07-deployment-patterns/04-ts-vercel-ai-sdk-chat/` |
+| Same agent across 7 frameworks (side-by-side) | `03-agentic-frameworks/07-framework-comparison/` |
+| HITL: interrupt/resume, approval gates, time-travel, async-via-queue | `04-human-in-the-loop/` (6 leaves) |
+| Eval-driven dev (RAGAS RAG + agent metrics, judge, synthetic data, regression-in-CI, cost/latency) | `05-evals-and-observability/` (7 leaves) |
+| Observability (self-hosted Langfuse + trace recorders) | `05-evals-and-observability/02-langfuse-tracing/` |
+| MCP server + client + resources + custom-for-internal-API | `06-mcp/` (4 leaves) |
+| FastAPI streaming agent (SSE) | `07-deployment-patterns/00-fastapi-streaming-agent/` |
+| Docker Compose full stack (Postgres + pgvector + Redis + Langfuse) | `07-deployment-patterns/02-docker-compose-stack/` |
+| TypeScript / edge (Next.js + Vercel AI SDK) | `07-deployment-patterns/04-ts-vercel-ai-sdk-chat/` |
 
 ---
 
@@ -108,7 +137,9 @@ See [`CONTRIBUTING.md`](CONTRIBUTING.md) for the full leaf-folder template.
 
 ## 📦 Status
 
-**Phases 0–2 complete.** Foundations + 13 RAG techniques + shared infra + eval pipeline are all in. See [`PLAN.md`](PLAN.md) for the full roadmap and [`01-rag/README.md`](01-rag/README.md) for the live leaderboard.
+**Phases 0–8 complete.** Foundations + 13 RAG techniques + 8 indexing internals + 8 framework leaves + 7 eval/observability leaves + 6 HITL patterns + 4 MCP leaves + 5 deployment patterns are all in. Every leaf has a committed `eval-snapshot.json`; CI compares against `main` and fails PRs on > 5% regression. See [`PLAN.md`](PLAN.md) for the full roadmap and [`01-rag/README.md`](01-rag/README.md) for the live leaderboard.
+
+**Phase 11 portfolio polish complete:** five long-form deep-dives in [`docs/deep-dives/`](docs/deep-dives/), six ADRs in [`docs/architecture-decisions/`](docs/architecture-decisions/), system diagrams in [`docs/architecture.md`](docs/architecture.md), and a soft-launch runbook in [`docs/launch-checklist.md`](docs/launch-checklist.md).
 
 Building in public — follow along on:
 - LinkedIn: *(link)*

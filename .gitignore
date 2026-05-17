@@ -54,6 +54,9 @@ dmypy.json
 
 # --- MkDocs ---
 site/
+# --- JupyterLite build state ---
+.jupyterlite.doit.db
+.cache/
 
 # --- Editors ---
 .vscode/

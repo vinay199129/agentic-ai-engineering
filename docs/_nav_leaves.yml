@@ -1,0 +1,183 @@
+  - All leaves:
+    - Overview: leaves/index.md
+    - "Phase 0 — Foundations":
+      - Overview: leaves/00-foundations/index.md
+      - "01-structured-outputs":
+        - README: leaves/00-foundations/01-structured-outputs/index.md
+        - Notebook: leaves/00-foundations/01-structured-outputs/notebook.ipynb
+      - "02-function-calling":
+        - README: leaves/00-foundations/02-function-calling/index.md
+        - Notebook: leaves/00-foundations/02-function-calling/notebook.ipynb
+      - "03-streaming-patterns":
+        - README: leaves/00-foundations/03-streaming-patterns/index.md
+        - Notebook: leaves/00-foundations/03-streaming-patterns/notebook.ipynb
+      - "04-prompt-patterns":
+        - README: leaves/00-foundations/04-prompt-patterns/index.md
+        - Notebook: leaves/00-foundations/04-prompt-patterns/notebook.ipynb
+    - "Phase 1 — RAG":
+      - Overview: leaves/01-rag/index.md
+      - "00-naive-rag":
+        - README: leaves/01-rag/00-naive-rag/index.md
+        - Notebook: leaves/01-rag/00-naive-rag/notebook.ipynb
+      - "01-chunking-strategies":
+        - README: leaves/01-rag/01-chunking-strategies/index.md
+        - Notebook: leaves/01-rag/01-chunking-strategies/notebook.ipynb
+      - "02-embedding-comparison":
+        - README: leaves/01-rag/02-embedding-comparison/index.md
+        - Notebook: leaves/01-rag/02-embedding-comparison/notebook.ipynb
+      - "03-hybrid-search":
+        - README: leaves/01-rag/03-hybrid-search/index.md
+        - Notebook: leaves/01-rag/03-hybrid-search/notebook.ipynb
+      - "04-reranking":
+        - README: leaves/01-rag/04-reranking/index.md
+        - Notebook: leaves/01-rag/04-reranking/notebook.ipynb
+      - "05-query-transformation":
+        - README: leaves/01-rag/05-query-transformation/index.md
+        - Notebook: leaves/01-rag/05-query-transformation/notebook.ipynb
+      - "06-self-rag":
+        - README: leaves/01-rag/06-self-rag/index.md
+        - Notebook: leaves/01-rag/06-self-rag/notebook.ipynb
+      - "07-corrective-rag":
+        - README: leaves/01-rag/07-corrective-rag/index.md
+        - Notebook: leaves/01-rag/07-corrective-rag/notebook.ipynb
+      - "08-agentic-rag":
+        - README: leaves/01-rag/08-agentic-rag/index.md
+        - Notebook: leaves/01-rag/08-agentic-rag/notebook.ipynb
+      - "09-graph-rag":
+        - README: leaves/01-rag/09-graph-rag/index.md
+        - Notebook: leaves/01-rag/09-graph-rag/notebook.ipynb
+      - "10-multimodal-rag":
+        - README: leaves/01-rag/10-multimodal-rag/index.md
+        - Notebook: leaves/01-rag/10-multimodal-rag/notebook.ipynb
+      - "11-long-context-rag":
+        - README: leaves/01-rag/11-long-context-rag/index.md
+        - Notebook: leaves/01-rag/11-long-context-rag/notebook.ipynb
+      - "12-comparison-bench":
+        - README: leaves/01-rag/12-comparison-bench/index.md
+        - Notebook: leaves/01-rag/12-comparison-bench/notebook.ipynb
+    - "Phase 2 — Indexing internals":
+      - Overview: leaves/02-indexing/index.md
+      - "00-vector-db-comparison":
+        - README: leaves/02-indexing/00-vector-db-comparison/index.md
+        - Notebook: leaves/02-indexing/00-vector-db-comparison/notebook.ipynb
+      - "01-hnsw-deep-dive":
+        - README: leaves/02-indexing/01-hnsw-deep-dive/index.md
+        - Notebook: leaves/02-indexing/01-hnsw-deep-dive/notebook.ipynb
+      - "02-ivf-pq-quantization":
+        - README: leaves/02-indexing/02-ivf-pq-quantization/index.md
+        - Notebook: leaves/02-indexing/02-ivf-pq-quantization/notebook.ipynb
+      - "03-bm25-and-hybrid":
+        - README: leaves/02-indexing/03-bm25-and-hybrid/index.md
+        - Notebook: leaves/02-indexing/03-bm25-and-hybrid/notebook.ipynb
+      - "04-knowledge-graph-index":
+        - README: leaves/02-indexing/04-knowledge-graph-index/index.md
+        - Notebook: leaves/02-indexing/04-knowledge-graph-index/notebook.ipynb
+      - "05-summary-tree-index":
+        - README: leaves/02-indexing/05-summary-tree-index/index.md
+        - Notebook: leaves/02-indexing/05-summary-tree-index/notebook.ipynb
+      - "06-colbert-late-interaction":
+        - README: leaves/02-indexing/06-colbert-late-interaction/index.md
+        - Notebook: leaves/02-indexing/06-colbert-late-interaction/notebook.ipynb
+      - "07-incremental-indexing":
+        - README: leaves/02-indexing/07-incremental-indexing/index.md
+        - Notebook: leaves/02-indexing/07-incremental-indexing/notebook.ipynb
+    - "Phase 3 — Agentic frameworks":
+      - Overview: leaves/03-agentic-frameworks/index.md
+      - "00-react-from-scratch":
+        - README: leaves/03-agentic-frameworks/00-react-from-scratch/index.md
+        - Notebook: leaves/03-agentic-frameworks/00-react-from-scratch/notebook.ipynb
+      - "01-langgraph":
+        - README: leaves/03-agentic-frameworks/01-langgraph/index.md
+        - Notebook: leaves/03-agentic-frameworks/01-langgraph/notebook.ipynb
+      - "02-pydantic-ai":
+        - README: leaves/03-agentic-frameworks/02-pydantic-ai/index.md
+        - Notebook: leaves/03-agentic-frameworks/02-pydantic-ai/notebook.ipynb
+      - "03-crewai":
+        - README: leaves/03-agentic-frameworks/03-crewai/index.md
+        - Notebook: leaves/03-agentic-frameworks/03-crewai/notebook.ipynb
+      - "04-microsoft-agent-framework":
+        - README: leaves/03-agentic-frameworks/04-microsoft-agent-framework/index.md
+        - Notebook: leaves/03-agentic-frameworks/04-microsoft-agent-framework/notebook.ipynb
+      - "05-openai-agents-sdk":
+        - README: leaves/03-agentic-frameworks/05-openai-agents-sdk/index.md
+        - Notebook: leaves/03-agentic-frameworks/05-openai-agents-sdk/notebook.ipynb
+      - "06-smolagents":
+        - README: leaves/03-agentic-frameworks/06-smolagents/index.md
+        - Notebook: leaves/03-agentic-frameworks/06-smolagents/notebook.ipynb
+      - "07-framework-comparison":
+        - README: leaves/03-agentic-frameworks/07-framework-comparison/index.md
+        - Notebook: leaves/03-agentic-frameworks/07-framework-comparison/notebook.ipynb
+    - "Phase 4 — Human-in-the-loop":
+      - Overview: leaves/04-human-in-the-loop/index.md
+      - "00-interrupt-and-resume":
+        - README: leaves/04-human-in-the-loop/00-interrupt-and-resume/index.md
+        - Notebook: leaves/04-human-in-the-loop/00-interrupt-and-resume/notebook.ipynb
+      - "01-approval-gates":
+        - README: leaves/04-human-in-the-loop/01-approval-gates/index.md
+        - Notebook: leaves/04-human-in-the-loop/01-approval-gates/notebook.ipynb
+      - "02-edit-state":
+        - README: leaves/04-human-in-the-loop/02-edit-state/index.md
+        - Notebook: leaves/04-human-in-the-loop/02-edit-state/notebook.ipynb
+      - "03-time-travel-debug":
+        - README: leaves/04-human-in-the-loop/03-time-travel-debug/index.md
+        - Notebook: leaves/04-human-in-the-loop/03-time-travel-debug/notebook.ipynb
+      - "04-streaming-with-intervention":
+        - README: leaves/04-human-in-the-loop/04-streaming-with-intervention/index.md
+        - Notebook: leaves/04-human-in-the-loop/04-streaming-with-intervention/notebook.ipynb
+      - "05-async-hitl-via-queue":
+        - README: leaves/04-human-in-the-loop/05-async-hitl-via-queue/index.md
+        - Notebook: leaves/04-human-in-the-loop/05-async-hitl-via-queue/notebook.ipynb
+    - "Phase 5 — Evals & observability":
+      - Overview: leaves/05-evals-and-observability/index.md
+      - "00-ragas-rag-eval":
+        - README: leaves/05-evals-and-observability/00-ragas-rag-eval/index.md
+        - Notebook: leaves/05-evals-and-observability/00-ragas-rag-eval/notebook.ipynb
+      - "01-ragas-agent-eval":
+        - README: leaves/05-evals-and-observability/01-ragas-agent-eval/index.md
+        - Notebook: leaves/05-evals-and-observability/01-ragas-agent-eval/notebook.ipynb
+      - "02-langfuse-tracing":
+        - README: leaves/05-evals-and-observability/02-langfuse-tracing/index.md
+        - Notebook: leaves/05-evals-and-observability/02-langfuse-tracing/notebook.ipynb
+      - "03-llm-as-judge":
+        - README: leaves/05-evals-and-observability/03-llm-as-judge/index.md
+        - Notebook: leaves/05-evals-and-observability/03-llm-as-judge/notebook.ipynb
+      - "04-synthetic-eval-data":
+        - README: leaves/05-evals-and-observability/04-synthetic-eval-data/index.md
+        - Notebook: leaves/05-evals-and-observability/04-synthetic-eval-data/notebook.ipynb
+      - "05-regression-suite":
+        - README: leaves/05-evals-and-observability/05-regression-suite/index.md
+        - Notebook: leaves/05-evals-and-observability/05-regression-suite/notebook.ipynb
+      - "06-cost-and-latency-bench":
+        - README: leaves/05-evals-and-observability/06-cost-and-latency-bench/index.md
+        - Notebook: leaves/05-evals-and-observability/06-cost-and-latency-bench/notebook.ipynb
+    - "Phase 6 — MCP":
+      - Overview: leaves/06-mcp/index.md
+      - "00-mcp-server-basics":
+        - README: leaves/06-mcp/00-mcp-server-basics/index.md
+        - Notebook: leaves/06-mcp/00-mcp-server-basics/notebook.ipynb
+      - "01-mcp-client-in-agent":
+        - README: leaves/06-mcp/01-mcp-client-in-agent/index.md
+        - Notebook: leaves/06-mcp/01-mcp-client-in-agent/notebook.ipynb
+      - "02-mcp-with-resources":
+        - README: leaves/06-mcp/02-mcp-with-resources/index.md
+        - Notebook: leaves/06-mcp/02-mcp-with-resources/notebook.ipynb
+      - "03-custom-mcp-for-internal-api":
+        - README: leaves/06-mcp/03-custom-mcp-for-internal-api/index.md
+        - Notebook: leaves/06-mcp/03-custom-mcp-for-internal-api/notebook.ipynb
+    - "Phase 7 — Deployment":
+      - Overview: leaves/07-deployment-patterns/index.md
+      - "00-fastapi-streaming-agent":
+        - README: leaves/07-deployment-patterns/00-fastapi-streaming-agent/index.md
+        - Notebook: leaves/07-deployment-patterns/00-fastapi-streaming-agent/notebook.ipynb
+      - "01-streamlit-demo-template":
+        - README: leaves/07-deployment-patterns/01-streamlit-demo-template/index.md
+        - Notebook: leaves/07-deployment-patterns/01-streamlit-demo-template/notebook.ipynb
+      - "02-docker-compose-stack":
+        - README: leaves/07-deployment-patterns/02-docker-compose-stack/index.md
+        - Notebook: leaves/07-deployment-patterns/02-docker-compose-stack/notebook.ipynb
+      - "03-hf-spaces-deploy":
+        - README: leaves/07-deployment-patterns/03-hf-spaces-deploy/index.md
+        - Notebook: leaves/07-deployment-patterns/03-hf-spaces-deploy/notebook.ipynb
+      - "04-ts-vercel-ai-sdk-chat":
+        - README: leaves/07-deployment-patterns/04-ts-vercel-ai-sdk-chat/index.md
+        - Notebook: leaves/07-deployment-patterns/04-ts-vercel-ai-sdk-chat/notebook.ipynb
