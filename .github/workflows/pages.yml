@@ -20,6 +20,13 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      - name: Configure GitHub Pages
+        # Fails fast with a clear error if Pages isn't enabled (Settings -> Pages
+        # -> Source: GitHub Actions). Also exposes ${{ steps.pages.outputs.base_url }}
+        # which the MkDocs build below uses as site_url.
+        id: pages
+        uses: actions/configure-pages@v5
+
       - name: Set up uv
         uses: astral-sh/setup-uv@v3
         with:
@@ -45,6 +52,10 @@ jobs:
           uv run python scripts/rewrite_leaf_links.py
 
       - name: Build MkDocs site
+        env:
+          # Inject the Pages URL so canonical <link> tags in <head> are correct
+          # for the actual deployed site (overrides site_url in mkdocs.yml).
+          MKDOCS_SITE_URL: ${{ steps.pages.outputs.base_url }}/
         run: uv run mkdocs build --strict
 
       - name: Build JupyterLite site (into site/lite/)
