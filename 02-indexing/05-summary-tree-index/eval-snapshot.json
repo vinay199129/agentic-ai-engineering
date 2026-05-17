@@ -1,0 +1,23 @@
+{
+  "technique": "summary-tree-index",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:43:25Z",
+  "metrics": {
+    "n_docs": 10,
+    "n_questions": 26,
+    "k": 3,
+    "config": {
+      "n_clusters": 3,
+      "dims": 256
+    },
+    "tree_recall@k": 0.7308,
+    "flat_recall@k": 0.9231,
+    "cluster_sizes": {
+      "cluster_0": 1,
+      "cluster_1": 5,
+      "cluster_2": 4
+    },
+    "avg_summary_len_chars": 166
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "technique": "ts-vercel-ai-sdk-chat",
+  "version": "0.1.0",
+  "dataset": "scaffold",
+  "run_id": "2026-05-17T07:29:16Z",
+  "metrics": {
+    "averages": {
+      "package_json_parses": 1.0,
+      "required_deps_present": 1.0,
+      "required_scripts_present": 1.0,
+      "app_router_files_present": 1.0,
+      "edge_runtime_declared": 1.0,
+      "backend_proxy_wired": 1.0,
+      "interrupt_handled_in_ui": 1.0
+    },
+    "deps": [
+      "ai",
+      "next",
+      "react",
+      "react-dom"
+    ],
+    "scripts": [
+      "build",
+      "dev",
+      "lint",
+      "start",
+      "typecheck"
+    ]
+  }
+}

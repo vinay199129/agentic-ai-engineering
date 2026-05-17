@@ -29,6 +29,15 @@ docs = [
     "mkdocs-material>=9.5",
     "mkdocs-jupyter>=0.25",
 ]
+# Phase 11: in-browser notebooks via JupyterLite/Pyodide. Built into the
+# docs site by `scripts/build_jupyterlite.py` so the from-scratch leaves
+# are one-click runnable from GitHub Pages.
+jupyterlite = [
+    "jupyterlite-core>=0.4",
+    "jupyterlite-pyodide-kernel>=0.4",
+    "jupyterlab>=4.2",
+    "libarchive-c>=5",
+]
 foundations = [
     "litellm>=1.52",
     "pydantic>=2.9",
@@ -59,11 +68,55 @@ indexing = [
     "networkx>=3.3",
     "faiss-cpu>=1.8",
 ]
-# frameworks = []
-# hitl = []
-# evals = []
-# mcp = []
-# deployment = []
+# Phase 4: evals + observability. We intentionally re-implement RAGAS-style
+# metrics on top of the shared LLM shim so the cache works and we don't
+# couple the repo to RAGAS's release cadence. Langfuse is optional.
+evals = [
+    "litellm>=1.52",
+    "pydantic>=2.9",
+    "python-dotenv>=1.0",
+    "numpy>=1.26",
+    "pytest>=8",
+]
+# Phase 5: agentic frameworks. Each notebook shows the framework's idiomatic
+# code; the eval falls back to the shared offline solver in
+# `03-agentic-frameworks/task.py` so CI stays offline. Some packages have
+# heavy transitive deps - install opt-in with `uv sync --group frameworks`.
+frameworks = [
+    "litellm>=1.52",
+    "pydantic>=2.9",
+    "python-dotenv>=1.0",
+    "numpy>=1.26",
+]
+# Phase 6: HITL patterns. The shared `04-human-in-the-loop/hitl.py` runner is
+# pure-Python (no langgraph dep needed) so the snapshots reproduce in CI; the
+# notebooks show the real LangGraph code in markdown for readers with the
+# framework installed.
+hitl = [
+    "litellm>=1.52",
+    "pydantic>=2.9",
+    "python-dotenv>=1.0",
+]
+# Phase 7: MCP. We ship a tiny in-process JSON-RPC implementation in
+# `06-mcp/mcp_core.py` so leaves run without the official MCP SDK, but the
+# notebooks reference `fastmcp` / `mcp` for production setups.
+mcp = [
+    "pydantic>=2.9",
+    "litellm>=1.52",
+    "python-dotenv>=1.0",
+]
+# Phase 8: deployment patterns. Only the leaves that actually exercise the
+# server need fastapi/uvicorn; the rest are config-only.
+deployment = [
+    "fastapi>=0.115",
+    "uvicorn>=0.32",
+    "httpx>=0.27",
+    "sse-starlette>=2.1",
+    "streamlit>=1.39",
+    "litellm>=1.52",
+    "pydantic>=2.9",
+    "pyyaml>=6.0",
+]
 
 [tool.uv]
 default-groups = ["dev"]
@@ -102,7 +155,7 @@ explicit_package_bases = true
 # separate dirs, so mypy sees them as duplicate top-level modules. They are
 # short procedural scripts whose dependencies (shared/, benchmarks/) ARE type
 # checked, so exclude the script files themselves rather than fight mypy.
-exclude = ["build/", ".venv/", "site/", ".*/eval\\.py$"]
+exclude = ["build/", ".venv/", "site/", ".*/eval\\.py$", ".*/app\\.py$"]
 
 # --- Pytest --------------------------------------------------------------
 [tool.pytest.ini_options]

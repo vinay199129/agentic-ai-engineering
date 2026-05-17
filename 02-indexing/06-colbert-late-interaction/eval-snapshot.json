@@ -1,0 +1,30 @@
+{
+  "technique": "colbert-late-interaction",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:45:11Z",
+  "metrics": {
+    "n_docs": 10,
+    "n_questions": 26,
+    "config": {
+      "dims": 128,
+      "max_doc_tokens": 96,
+      "max_query_tokens": 24
+    },
+    "per_retriever": {
+      "single_vector": {
+        "recall@1": 0.5769,
+        "recall@3": 0.8462,
+        "recall@5": 1.0
+      },
+      "late_interaction_maxsim": {
+        "recall@1": 0.7692,
+        "recall@3": 0.9615,
+        "recall@5": 1.0
+      }
+    },
+    "index_vectors_single": 10,
+    "index_vectors_late_interaction": 960,
+    "index_size_ratio_vs_single": 96.0
+  }
+}

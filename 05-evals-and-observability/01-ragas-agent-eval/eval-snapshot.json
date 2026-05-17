@@ -1,0 +1,46 @@
+{
+  "technique": "ragas-agent-eval",
+  "version": "0.1.0",
+  "dataset": "05-evals-and-observability/01-ragas-agent-eval/traces.json",
+  "run_id": "2026-05-16T20:56:26Z",
+  "metrics": {
+    "n_traces": 5,
+    "averages": {
+      "tool_call_accuracy": 0.8,
+      "agent_goal_accuracy": 0.2,
+      "topic_adherence": 0.9333
+    },
+    "per_trace": [
+      {
+        "id": "happy",
+        "tool_call_accuracy": 1.0,
+        "agent_goal_accuracy": 1.0,
+        "topic_adherence": 1.0
+      },
+      {
+        "id": "wrong-tool",
+        "tool_call_accuracy": 0.0,
+        "agent_goal_accuracy": 0.0,
+        "topic_adherence": 1.0
+      },
+      {
+        "id": "wrong-args",
+        "tool_call_accuracy": 1.0,
+        "agent_goal_accuracy": 0.0,
+        "topic_adherence": 1.0
+      },
+      {
+        "id": "off-topic",
+        "tool_call_accuracy": 1.0,
+        "agent_goal_accuracy": 0.0,
+        "topic_adherence": 0.6667
+      },
+      {
+        "id": "missed-goal",
+        "tool_call_accuracy": 1.0,
+        "agent_goal_accuracy": 0.0,
+        "topic_adherence": 1.0
+      }
+    ]
+  }
+}

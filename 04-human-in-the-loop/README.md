@@ -6,9 +6,13 @@ Production-grade HITL patterns. Primarily LangGraph (`interrupt()` + checkpointe
 
 | Leaf | Pattern | Status |
 |---|---|---|
-| `00-interrupt-and-resume/` | LangGraph `interrupt()` + resume with `Command` | ⏳ Phase 6 |
-| `01-approval-gates/` | Tool-call approval before execution | ⏳ Phase 6 |
-| `02-edit-state/` | Inspect & modify graph state mid-run | ⏳ Phase 6 |
-| `03-time-travel-debug/` | Checkpoint rewind / fork | ⏳ Phase 6 |
-| `04-streaming-with-intervention/` | Pause stream → user input → resume | ⏳ Phase 6 |
-| `05-async-hitl-via-queue/` | Long-running agent + email/Slack approval webhook | ⏳ Phase 6 |
+| `00-interrupt-and-resume/` | LangGraph `interrupt()` + resume with `Command` | ✅ |
+| `01-approval-gates/` | Tool-call approval before execution | ✅ |
+| `02-edit-state/` | Inspect & modify graph state mid-run | ✅ |
+| `03-time-travel-debug/` | Checkpoint rewind / fork | ✅ |
+| `04-streaming-with-intervention/` | Pause stream → user input → resume | ✅ |
+| `05-async-hitl-via-queue/` | Long-running agent + email/Slack approval webhook | ✅ |
+
+All leaves share `04-human-in-the-loop/hitl.py` — a tiny pure-Python runner
+that mirrors LangGraph's `interrupt()` / `Command` / `Checkpointer` API so the
+notebooks reproduce in CI without the framework.

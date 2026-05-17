@@ -1,0 +1,43 @@
+{
+  "technique": "vector-db-comparison",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:39:11Z",
+  "metrics": {
+    "n_docs": 10,
+    "n_questions": 26,
+    "per_index": {
+      "flat": {
+        "recall@1": 0.6923,
+        "recall@3": 0.8846,
+        "recall@5": 0.9615,
+        "build_ms": 0.098
+      },
+      "hnsw": {
+        "recall@1": 0.6923,
+        "recall@3": 0.8846,
+        "recall@5": 0.9615,
+        "build_ms": 0.546
+      },
+      "ivf": {
+        "recall@1": 0.6923,
+        "recall@3": 0.8462,
+        "recall@5": 0.8846,
+        "build_ms": 2644.195
+      },
+      "bm25": {
+        "recall@1": 0.9231,
+        "recall@3": 1.0,
+        "recall@5": 1.0,
+        "build_ms": 1.163
+      }
+    },
+    "config": {
+      "dims": 256,
+      "ivf_nlist": 3,
+      "ivf_nprobe": 2,
+      "hnsw_M": 4,
+      "hnsw_ef": 16
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "technique": "edit-state",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-17T07:29:08Z",
+  "metrics": {
+    "n_questions": 3,
+    "averages": {
+      "edit_applied_rate": 1.0,
+      "edit_propagation_accuracy": 1.0,
+      "human_decision_accuracy": 1.0,
+      "avg_latency_ms": 0.626
+    },
+    "per_question": [
+      {
+        "id": "q01",
+        "original_draft": "[synth-001] We present RA-MoE, a sparse mixture-of-experts architecture in which router logits are biased toward experts whose recent activation history minimizes inter-device communication.",
+        "edited_draft": "[synth-001] Edited by reviewer: [synth-001] We present RA-MoE, a sparse mixture-of-experts architecture in which router logits are biased toward experts whose recent activation history minimiz",
+        "approved": true,
+        "published_answer": "[synth-001] Edited by reviewer: [synth-001] We present RA-MoE, a sparse mixture-of-experts architecture in which router logits are biased toward experts whose recent activation history minimiz",
+        "edit_applied": true,
+        "latency_ms": 1.155
+      },
+      {
+        "id": "q23",
+        "original_draft": "[synth-002] Standard dense retrievers degrade on documents longer than their training context.",
+        "edited_draft": "[synth-004] [synth-006] Edited by reviewer: [synth-002] Standard dense retrievers degrade on documents longer than their training context.",
+        "approved": true,
+        "published_answer": "[synth-004] [synth-006] Edited by reviewer: [synth-002] Standard dense retrievers degrade on documents longer than their training context.",
+        "edit_applied": true,
+        "latency_ms": 0.417
+      },
+      {
+        "id": "q27",
+        "original_draft": "[synth-008] We extract activation steering vectors that increase a model's adherence to its system prompt in the presence of injected adversarial user instructions.",
+        "edited_draft": "I cannot answer this question from the provided corpus.",
+        "approved": false,
+        "published_answer": null,
+        "edit_applied": true,
+        "latency_ms": 0.307
+      }
+    ]
+  }
+}

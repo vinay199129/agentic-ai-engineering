@@ -1,0 +1,19 @@
+{
+  "technique": "langfuse-tracing",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:57:48Z",
+  "metrics": {
+    "n_traces": 3,
+    "n_spans": 9,
+    "spans_with_scores": 9,
+    "scores_total": 9,
+    "avg_duration_ms": 0.1541,
+    "parent_chain_valid": true,
+    "demo_question_ids": [
+      "q01",
+      "q05",
+      "q23"
+    ]
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "technique": "interrupt-and-resume",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-17T07:29:06Z",
+  "metrics": {
+    "pattern": "interrupt-and-resume",
+    "n_questions": 3,
+    "averages": {
+      "interrupt_fire_rate": 1.0,
+      "human_decision_accuracy": 1.0,
+      "publish_gating_accuracy": 1.0,
+      "avg_latency_ms": 0.551
+    },
+    "per_question": [
+      {
+        "id": "q01",
+        "interrupt_fired": true,
+        "approved": true,
+        "published": true,
+        "final_answer": "[synth-001] We present RA-MoE, a sparse mixture-of-experts architecture in which router logits are biased toward experts whose recent activation history minimizes inter-device communication.",
+        "latency_ms": 0.701,
+        "trace": [
+          {
+            "role": "node",
+            "name": "search",
+            "payload": {
+              "delta_keys": [
+                "hits"
+              ]
+            }
+          },
+          {
+            "role": "node",
+            "name": "draft",
+            "payload": {
+              "delta_keys": [
+                "draft"
+              ]
+            }
+          },
+          {
+            "role": "resume",
+            "name": "approve",
+            "payload": {
+              "resume": {
+                "approved": true,
+                "reviewer": "auto"
+              },
+              "update": {}
+            }
+          },
+          {
+            "role": "node",
+            "name": "approve",
+            "payload": {
+              "delta_keys": [
+                "approved",
+                "reviewer",
+                "_resume_value"
+              ]
+            }
+          },
+          {
+            "role": "node",
+            "name": "publish",
+            "payload": {
+              "delta_keys": [
+                "published",
+                "final_answer"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "q23",
+        "interrupt_fired": true,
+        "approved": false,
+        "published": false,
+        "final_answer": null,
+        "latency_ms": 0.489,
+        "trace": [
+          {
+            "role": "node",
+            "name": "search",
+            "payload": {
+              "delta_keys": [
+                "hits"
+              ]
+            }
+          },
+          {
+            "role": "node",
+            "name": "draft",
+            "payload": {
+              "delta_keys": [
+                "draft"
+              ]
+            }
+          },
+          {
+            "role": "resume",
+            "name": "approve",
+            "payload": {
+              "resume": {
+                "approved": false,
+                "reviewer": "auto"
+              },
+              "update": {}
+            }
+          },
+          {
+            "role": "node",
+            "name": "approve",
+            "payload": {
+              "delta_keys": [
+                "approved",
+                "reviewer",
+                "_resume_value"
+              ]
+            }
+          },
+          {
+            "role": "node",
+            "name": "publish",
+            "payload": {
+              "delta_keys": [
+                "published",
+                "final_answer"
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "q27",
+        "interrupt_fired": true,
+        "approved": false,
+        "published": false,
+        "final_answer": null,
+        "latency_ms": 0.464,
+        "trace": [
+          {
+            "role": "node",
+            "name": "search",
+            "payload": {
+              "delta_keys": [
+                "hits"
+              ]
+            }
+          },
+          {
+            "role": "node",
+            "name": "draft",
+            "payload": {
+              "delta_keys": [
+                "draft"
+              ]
+            }
+          },
+          {
+            "role": "resume",
+            "name": "approve",
+            "payload": {
+              "resume": {
+                "approved": false,
+                "reviewer": "auto"
+              },
+              "update": {}
+            }
+          },
+          {
+            "role": "node",
+            "name": "approve",
+            "payload": {
+              "delta_keys": [
+                "approved",
+                "reviewer",
+                "_resume_value"
+              ]
+            }
+          },
+          {
+            "role": "node",
+            "name": "publish",
+            "payload": {
+              "delta_keys": [
+                "published",
+                "final_answer"
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

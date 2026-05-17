@@ -1,0 +1,22 @@
+{
+  "technique": "fastapi-streaming-agent",
+  "version": "0.1.0",
+  "dataset": "scenarios/single-question",
+  "run_id": "2026-05-17T07:29:15Z",
+  "metrics": {
+    "averages": {
+      "stream_frame_count": 5.0,
+      "interrupt_observed": 1.0,
+      "resume_completes": 1.0,
+      "node_event_present": 1.0,
+      "avg_latency_ms": 74.274
+    },
+    "events": [
+      "node_complete",
+      "node_complete",
+      "interrupt",
+      "node_complete",
+      "complete"
+    ]
+  }
+}

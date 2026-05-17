@@ -1,0 +1,32 @@
+{
+  "technique": "incremental-indexing",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:46:36Z",
+  "metrics": {
+    "n_docs": 10,
+    "n_questions": 26,
+    "k": 3,
+    "config": {
+      "dims": 256,
+      "seed_old": 0,
+      "seed_new": 7,
+      "deleted_ids": [
+        "synth-001",
+        "synth-003"
+      ],
+      "added_ids": [
+        "synth-101",
+        "synth-102"
+      ],
+      "partial_re_embed_count": 5
+    },
+    "baseline_recall@k": 0.8846,
+    "post_delete_recall@k": 0.85,
+    "post_add_recall@k": 0.85,
+    "mixed_embedder_recall@k_old_queries": 0.5,
+    "mixed_embedder_recall@k_new_queries": 0.6,
+    "live_docs_post_delete": 8,
+    "live_docs_post_add": 10
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "technique": "async-hitl-via-queue",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-17T07:29:10Z",
+  "metrics": {
+    "n_questions": 3,
+    "averages": {
+      "queue_roundtrip_rate": 1.0,
+      "callback_resume_success_rate": 1.0,
+      "out_of_order_safe_rate": 1.0,
+      "avg_queue_latency_ms": 0.848
+    },
+    "drain_order": [
+      "q27",
+      "q23",
+      "q01"
+    ],
+    "per_question": [
+      {
+        "id": "q01",
+        "draft": "[synth-001] We present RA-MoE, a sparse mixture-of-experts architecture in which router logits are biased toward experts whose recent activation history minimizes inter-device communication.",
+        "enqueued": true,
+        "approved": true,
+        "published": true,
+        "queue_latency_ms": 1.377
+      },
+      {
+        "id": "q23",
+        "draft": "[synth-002] Standard dense retrievers degrade on documents longer than their training context.",
+        "enqueued": true,
+        "approved": false,
+        "published": false,
+        "queue_latency_ms": 0.836
+      },
+      {
+        "id": "q27",
+        "draft": "[synth-008] We extract activation steering vectors that increase a model's adherence to its system prompt in the presence of injected adversarial user instructions.",
+        "enqueued": true,
+        "approved": false,
+        "published": false,
+        "queue_latency_ms": 0.331
+      }
+    ]
+  }
+}

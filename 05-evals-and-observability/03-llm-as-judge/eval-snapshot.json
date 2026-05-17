@@ -1,0 +1,73 @@
+{
+  "technique": "llm-as-judge",
+  "version": "0.1.0",
+  "dataset": "05-evals-and-observability/03-llm-as-judge/pairs.json",
+  "run_id": "2026-05-16T20:59:07Z",
+  "metrics": {
+    "n_pairs": 5,
+    "rubric_hist": {
+      "a": [
+        0,
+        1,
+        0,
+        2,
+        2
+      ],
+      "b": [
+        0,
+        2,
+        0,
+        3,
+        0
+      ]
+    },
+    "raw_wins": {
+      "A": 3,
+      "B": 1,
+      "tie": 1
+    },
+    "swap_wins": {
+      "A": 3,
+      "B": 1,
+      "tie": 1
+    },
+    "position_bias_delta_a": 0.0,
+    "per_pair": [
+      {
+        "id": "p1",
+        "rubric_a": 4,
+        "rubric_b": 1,
+        "raw": "A",
+        "swap": "A"
+      },
+      {
+        "id": "p2",
+        "rubric_a": 3,
+        "rubric_b": 3,
+        "raw": "tie",
+        "swap": "tie"
+      },
+      {
+        "id": "p3",
+        "rubric_a": 3,
+        "rubric_b": 3,
+        "raw": "A",
+        "swap": "A"
+      },
+      {
+        "id": "p4",
+        "rubric_a": 4,
+        "rubric_b": 1,
+        "raw": "A",
+        "swap": "A"
+      },
+      {
+        "id": "p5",
+        "rubric_a": 1,
+        "rubric_b": 3,
+        "raw": "B",
+        "swap": "B"
+      }
+    ]
+  }
+}

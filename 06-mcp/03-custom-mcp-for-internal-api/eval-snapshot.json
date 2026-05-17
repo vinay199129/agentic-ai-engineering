@@ -1,0 +1,99 @@
+{
+  "technique": "custom-mcp-for-internal-api",
+  "version": "0.1.0",
+  "dataset": "fixtures/weather",
+  "run_id": "2026-05-17T07:29:13Z",
+  "metrics": {
+    "averages": {
+      "wrap_call_success_rate": 1.0,
+      "payload_trim_ratio": 0.6044,
+      "rate_limit_enforcement_rate": 1.0,
+      "avg_latency_ms": 0.341
+    },
+    "forecast_calls": [
+      {
+        "args": {
+          "city": "Bengaluru"
+        },
+        "result": {
+          "city": "Bengaluru",
+          "temp": 28.4,
+          "units": "celsius",
+          "conditions": "partly cloudy",
+          "updated_at": "2026-05-17T07:00:00Z"
+        }
+      },
+      {
+        "args": {
+          "city": "Seattle",
+          "units": "fahrenheit"
+        },
+        "result": {
+          "city": "Seattle",
+          "temp": 53.8,
+          "units": "fahrenheit",
+          "conditions": "light rain",
+          "updated_at": "2026-05-17T07:00:00Z"
+        }
+      },
+      {
+        "args": {
+          "city": "Atlantis"
+        },
+        "result": {
+          "error": "unknown city 'Atlantis'"
+        }
+      },
+      {
+        "args": {
+          "city": "Bengaluru",
+          "units": "kelvin"
+        },
+        "result": {
+          "error": "units must be celsius|fahrenheit, got 'kelvin'"
+        }
+      }
+    ],
+    "alert_calls": [
+      {
+        "args": {
+          "city": "Bengaluru",
+          "threshold_c": 35.0
+        },
+        "result": {
+          "city": "Bengaluru",
+          "threshold_c": 35.0,
+          "alert_id": "alert-bengaluru-35",
+          "active": true
+        }
+      },
+      {
+        "args": {
+          "city": "Seattle",
+          "threshold_c": 25.0
+        },
+        "result": {
+          "city": "Seattle",
+          "threshold_c": 25.0,
+          "alert_id": "alert-seattle-25",
+          "active": true
+        }
+      },
+      {
+        "args": {
+          "city": "Bengaluru",
+          "threshold_c": 36.0
+        },
+        "result": {
+          "error": "rate_limited",
+          "retry_after_s": 60
+        }
+      }
+    ],
+    "upstream_bytes": {
+      "forecast": 862,
+      "alerts": 512
+    },
+    "wrapped_bytes": 341
+  }
+}

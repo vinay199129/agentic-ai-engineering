@@ -22,8 +22,8 @@ jobs:
       - name: Set up Python
         run: uv python install 3.12
 
-      - name: Install foundations + rag deps
-        run: uv sync --group dev --group foundations --group rag
+      - name: Install all dependency groups
+        run: uv sync --group dev --group foundations --group rag --group indexing --group evals --group frameworks --group hitl --group mcp --group deployment
 
       - name: Ruff lint
         run: uv run ruff check .

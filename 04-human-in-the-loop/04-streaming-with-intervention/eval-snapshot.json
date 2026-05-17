@@ -1,0 +1,41 @@
+{
+  "technique": "streaming-with-intervention",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-17T07:29:09Z",
+  "metrics": {
+    "n_questions": 3,
+    "averages": {
+      "chunks_before_pause": 2.0,
+      "stream_completed_after_resume_rate": 1.0,
+      "total_chunks_per_run": 3.0,
+      "avg_latency_ms": 0.381
+    },
+    "per_question": [
+      {
+        "id": "q01",
+        "events_before_pause": 2,
+        "paused_at": "approve",
+        "completed_after_resume": true,
+        "final_answer": "[synth-001] We present RA-MoE, a sparse mixture-of-experts architecture in which router logits are biased toward experts whose recent activation history minimizes inter-device communication.",
+        "latency_ms": 0.547
+      },
+      {
+        "id": "q23",
+        "events_before_pause": 2,
+        "paused_at": "approve",
+        "completed_after_resume": true,
+        "final_answer": "[synth-002] Standard dense retrievers degrade on documents longer than their training context.",
+        "latency_ms": 0.312
+      },
+      {
+        "id": "q27",
+        "events_before_pause": 2,
+        "paused_at": "approve",
+        "completed_after_resume": true,
+        "final_answer": "[synth-008] We extract activation steering vectors that increase a model's adherence to its system prompt in the presence of injected adversarial user instructions.",
+        "latency_ms": 0.283
+      }
+    ]
+  }
+}

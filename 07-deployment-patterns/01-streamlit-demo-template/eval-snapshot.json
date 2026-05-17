@@ -1,0 +1,20 @@
+{
+  "technique": "streamlit-demo-template",
+  "version": "0.1.0",
+  "dataset": "shared/qa-3",
+  "run_id": "2026-05-17T07:29:16Z",
+  "metrics": {
+    "averages": {
+      "module_import_ok": 1.0,
+      "public_surface_complete": 1.0,
+      "demo_solve_success_rate": 1.0,
+      "avg_trace_steps": 4.0,
+      "avg_latency_ms": 155.015
+    },
+    "trace_lens": [
+      4,
+      4,
+      4
+    ]
+  }
+}

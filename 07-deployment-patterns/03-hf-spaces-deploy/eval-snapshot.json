@@ -1,0 +1,41 @@
+{
+  "technique": "hf-spaces-deploy",
+  "version": "0.1.0",
+  "dataset": "space-config",
+  "run_id": "2026-05-17T07:29:16Z",
+  "metrics": {
+    "averages": {
+      "frontmatter_complete": 1.0,
+      "app_file_present": 1.0,
+      "requirements_parses": 1.0,
+      "workflow_uses_official_actions": 1.0,
+      "workflow_uploads_to_space": 1.0,
+      "secret_scope_documented": 1.0
+    },
+    "frontmatter": {
+      "title": "Agentic AI Engineering Demo",
+      "emoji": "\ud83e\udd16",
+      "colorFrom": "indigo",
+      "colorTo": "purple",
+      "sdk": "streamlit",
+      "sdk_version": "1.39.0",
+      "python_version": 3.12,
+      "app_file": "app.py",
+      "pinned": false,
+      "license": "mit",
+      "short_description": "Reusable Streamlit shell with an offline MCP agent demo.",
+      "tags": [
+        "agents",
+        "rag",
+        "mcp",
+        "streamlit"
+      ]
+    },
+    "requirements": [
+      "streamlit==1.39.0",
+      "pydantic>=2.9",
+      "litellm>=1.52",
+      "python-dotenv>=1.0"
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "technique": "hnsw-deep-dive",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:40:38Z",
+  "metrics": {
+    "n_docs": 10,
+    "n_questions": 26,
+    "k": 5,
+    "config": {
+      "M": 4,
+      "ef_construction": 16,
+      "dims": 64
+    },
+    "recall_vs_flat": {
+      "ef=1": 0.2,
+      "ef=2": 0.3846,
+      "ef=4": 0.7615,
+      "ef=8": 0.9923,
+      "ef=16": 1.0
+    },
+    "query_latency_us": {
+      "ef=1": 103.68,
+      "ef=2": 94.25,
+      "ef=4": 96.43,
+      "ef=8": 102.02,
+      "ef=16": 99.56
+    },
+    "graph": {
+      "n_layers": 1,
+      "max_layer": 0,
+      "avg_degree_layer0": 8.0,
+      "build_ms": 0.526
+    }
+  }
+}

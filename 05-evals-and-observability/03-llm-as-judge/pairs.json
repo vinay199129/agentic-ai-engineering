@@ -1,0 +1,32 @@
+[
+  {
+    "id": "p1",
+    "question": "By how much does RA-MoE reduce p99 decode latency?",
+    "answer_a": "RA-MoE reduces p99 decode latency by 38% relative to standard learned routing while keeping perplexity within 0.4%.",
+    "answer_b": "RA-MoE makes inference faster."
+  },
+  {
+    "id": "p2",
+    "question": "What does AdaSpec adapt?",
+    "answer_a": "AdaSpec adapts the draft length K per request by tracking acceptance rate; 2.7x speedup on Llama-3 70B.",
+    "answer_b": "AdaSpec dynamically tunes K, which is the number of speculative tokens drafted before verification."
+  },
+  {
+    "id": "p3",
+    "question": "How many language pairs does Polyglot-Switch cover?",
+    "answer_a": "Polyglot-Switch covers nine language pairs across 12K utterances.",
+    "answer_b": "It supports many language pairs commonly used in conversational AI."
+  },
+  {
+    "id": "p4",
+    "question": "What does Verifiable Constitutional Critique pair each clause with?",
+    "answer_a": "VCC pairs each constitutional clause with a programmatic verifier (regex, SQL, unit test) where possible.",
+    "answer_b": "VCC pairs clauses with rich machine-learning models that check semantic alignment with the entire training corpus and emit a probability distribution over violations."
+  },
+  {
+    "id": "p5",
+    "question": "Which paper introduces the LoRA fine-tuning method?",
+    "answer_a": "I don't know based on the provided context.",
+    "answer_b": "LoRA was introduced in the 2021 paper 'LoRA: Low-Rank Adaptation of Large Language Models' by Hu et al."
+  }
+]

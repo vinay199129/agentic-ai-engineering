@@ -1,0 +1,93 @@
+{
+  "technique": "approval-gates",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-17T07:29:07Z",
+  "metrics": {
+    "n_questions": 3,
+    "n_policies": 2,
+    "tool_policy": {
+      "search": "safe",
+      "draft": "safe",
+      "publish": "requires_approval"
+    },
+    "averages": {
+      "approval_gate_fire_rate": 1.0,
+      "approval_policy_consistency": 1.0,
+      "safe_tool_bypass_rate": 1.0,
+      "avg_latency_ms": 0.58
+    },
+    "per_policy": [
+      {
+        "policy": "approve_all",
+        "averages": {
+          "approval_gate_fire_rate": 1.0,
+          "approval_policy_consistency": 1.0,
+          "safe_tool_bypass_rate": 1.0,
+          "avg_latency_ms": 0.552
+        },
+        "per_question": [
+          {
+            "id": "q01",
+            "policy": "approve_all",
+            "gate_fired": true,
+            "approved": true,
+            "published": true,
+            "latency_ms": 0.771
+          },
+          {
+            "id": "q23",
+            "policy": "approve_all",
+            "gate_fired": true,
+            "approved": true,
+            "published": true,
+            "latency_ms": 0.487
+          },
+          {
+            "id": "q27",
+            "policy": "approve_all",
+            "gate_fired": true,
+            "approved": true,
+            "published": true,
+            "latency_ms": 0.397
+          }
+        ]
+      },
+      {
+        "policy": "deny_all",
+        "averages": {
+          "approval_gate_fire_rate": 1.0,
+          "approval_policy_consistency": 1.0,
+          "safe_tool_bypass_rate": 1.0,
+          "avg_latency_ms": 0.608
+        },
+        "per_question": [
+          {
+            "id": "q01",
+            "policy": "deny_all",
+            "gate_fired": true,
+            "approved": false,
+            "published": false,
+            "latency_ms": 0.381
+          },
+          {
+            "id": "q23",
+            "policy": "deny_all",
+            "gate_fired": true,
+            "approved": false,
+            "published": false,
+            "latency_ms": 0.98
+          },
+          {
+            "id": "q27",
+            "policy": "deny_all",
+            "gate_fired": true,
+            "approved": false,
+            "published": false,
+            "latency_ms": 0.463
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "technique": "docker-compose-stack",
+  "version": "0.1.0",
+  "dataset": "compose.yaml",
+  "run_id": "2026-05-17T07:29:16Z",
+  "metrics": {
+    "averages": {
+      "yaml_parses": 1.0,
+      "required_services_present": 1.0,
+      "image_match_rate": 1.0,
+      "healthcheck_coverage": 0.5,
+      "depends_on_uses_health_condition": 1.0,
+      "exposed_ports_coverage": 1.0
+    },
+    "service_names": [
+      "api",
+      "langfuse",
+      "postgres",
+      "redis"
+    ],
+    "named_volumes": [
+      "postgres_data",
+      "redis_data"
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "technique": "mcp-with-resources",
+  "version": "0.1.0",
+  "dataset": "benchmarks/corpus/v1",
+  "run_id": "2026-05-17T07:29:12Z",
+  "metrics": {
+    "averages": {
+      "resource_read_success_rate": 1.0,
+      "resource_uri_uniqueness": 1.0,
+      "prompt_render_validity": 1.0,
+      "avg_latency_ms": 0.191
+    },
+    "counts": {
+      "resources": 10,
+      "prompts": 1,
+      "tools": 3
+    },
+    "sample_rendered_prompt": [
+      {
+        "role": "system",
+        "content": {
+          "type": "text",
+          "text": "You are a research assistant. Use the available tools (search_corpus, fetch_paper, cite) and only answer from the corpus. Cite every claim."
+        }
+      },
+      {
+        "role": "user",
+        "content": {
+          "type": "text",
+          "text": "What does RA-MoE do?"
+        }
+      }
+    ]
+  }
+}

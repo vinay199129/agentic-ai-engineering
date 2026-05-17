@@ -1,0 +1,42 @@
+{
+  "technique": "knowledge-graph-index",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:43:49Z",
+  "metrics": {
+    "n_docs": 10,
+    "n_multi_hop_questions": 4,
+    "n_nodes": 50,
+    "n_edges": 31,
+    "avg_degree": 1.24,
+    "multi_hop_source_coverage": 1.0,
+    "multi_hop_cross_doc_connectivity": 0.0,
+    "sample_edges": [
+      {
+        "subject": "RA-MoE",
+        "predicate": "is a",
+        "object": "sparse mixture-of-experts architecture"
+      },
+      {
+        "subject": "RA-MoE",
+        "predicate": "reduces",
+        "object": "p99 decode latency by 38%"
+      },
+      {
+        "subject": "RA-MoE",
+        "predicate": "uses",
+        "object": "exponential moving average of expert utilization"
+      },
+      {
+        "subject": "RA-MoE",
+        "predicate": "has",
+        "object": "47B total parameters"
+      },
+      {
+        "subject": "HA-Retrieve",
+        "predicate": "is a",
+        "object": "two-stage encoder"
+      }
+    ]
+  }
+}

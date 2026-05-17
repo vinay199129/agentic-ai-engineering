@@ -1,0 +1,17 @@
+{
+  "technique": "regression-suite",
+  "version": "0.1.0",
+  "dataset": "all-eval-snapshots",
+  "run_id": "2026-05-16T21:05:41Z",
+  "metrics": {
+    "n_snapshots": 28,
+    "n_metrics_total": 298,
+    "n_higher_is_better": 123,
+    "n_lower_is_better": 27,
+    "n_neutral_metrics": 148,
+    "tolerance": 0.05,
+    "baseline_present": false,
+    "n_regressions_vs_baseline": 0,
+    "regressions_vs_baseline": []
+  }
+}

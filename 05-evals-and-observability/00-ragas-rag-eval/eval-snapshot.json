@@ -1,0 +1,53 @@
+{
+  "technique": "ragas-rag-eval",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:54:32Z",
+  "metrics": {
+    "n_questions": 26,
+    "k": 3,
+    "averages": {
+      "context_precision": 0.8205,
+      "context_recall": 0.8269,
+      "faithfulness": 1.0,
+      "answer_relevancy": 0.2291
+    },
+    "per_question_first_5": [
+      {
+        "id": "q01",
+        "context_precision": 0.6667,
+        "context_recall": 0.0,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.1569
+      },
+      {
+        "id": "q02",
+        "context_precision": 1.0,
+        "context_recall": 1.0,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.2746
+      },
+      {
+        "id": "q03",
+        "context_precision": 0.6667,
+        "context_recall": 1.0,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.2526
+      },
+      {
+        "id": "q04",
+        "context_precision": 0.3333,
+        "context_recall": 1.0,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.2077
+      },
+      {
+        "id": "q05",
+        "context_precision": 1.0,
+        "context_recall": 0.0,
+        "faithfulness": 1.0,
+        "answer_relevancy": 0.2605
+      }
+    ]
+  }
+}

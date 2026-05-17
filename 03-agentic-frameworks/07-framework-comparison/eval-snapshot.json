@@ -1,0 +1,126 @@
+{
+  "technique": "framework-comparison",
+  "version": "0.1.0",
+  "dataset": "03-agentic-frameworks/*/eval-snapshot.json",
+  "run_id": "2026-05-16T21:47:52Z",
+  "metrics": {
+    "n_frameworks_indexed": 7,
+    "n_with_metrics": 7,
+    "feature_matrix": {
+      "react-from-scratch": {
+        "typed_io": "-",
+        "graph_state": "-",
+        "conditional_routing": "-",
+        "streaming": "-",
+        "checkpointer": "-",
+        "code_action": "-",
+        "handoffs": "-",
+        "vendor": "self"
+      },
+      "langgraph": {
+        "typed_io": "~",
+        "graph_state": "+",
+        "conditional_routing": "+",
+        "streaming": "+",
+        "checkpointer": "+",
+        "code_action": "-",
+        "handoffs": "~",
+        "vendor": "LangChain"
+      },
+      "pydantic-ai": {
+        "typed_io": "+",
+        "graph_state": "-",
+        "conditional_routing": "~",
+        "streaming": "+",
+        "checkpointer": "-",
+        "code_action": "-",
+        "handoffs": "-",
+        "vendor": "Pydantic"
+      },
+      "crewai": {
+        "typed_io": "~",
+        "graph_state": "-",
+        "conditional_routing": "~",
+        "streaming": "~",
+        "checkpointer": "-",
+        "code_action": "-",
+        "handoffs": "~",
+        "vendor": "CrewAI"
+      },
+      "microsoft-agent-framework": {
+        "typed_io": "~",
+        "graph_state": "+",
+        "conditional_routing": "+",
+        "streaming": "+",
+        "checkpointer": "+",
+        "code_action": "-",
+        "handoffs": "+",
+        "vendor": "Microsoft"
+      },
+      "openai-agents-sdk": {
+        "typed_io": "~",
+        "graph_state": "-",
+        "conditional_routing": "+",
+        "streaming": "+",
+        "checkpointer": "~",
+        "code_action": "-",
+        "handoffs": "+",
+        "vendor": "OpenAI"
+      },
+      "smolagents": {
+        "typed_io": "~",
+        "graph_state": "-",
+        "conditional_routing": "~",
+        "streaming": "+",
+        "checkpointer": "-",
+        "code_action": "+",
+        "handoffs": "-",
+        "vendor": "HuggingFace"
+      }
+    },
+    "metrics_by_framework": {
+      "react-from-scratch": {
+        "tool_call_accuracy": 1.0,
+        "final_answer_grounded": 0.3333,
+        "avg_n_steps": 4.0,
+        "avg_latency_ms": 0.894
+      },
+      "langgraph": {
+        "tool_call_accuracy": 1.0,
+        "final_answer_grounded": 0.3333,
+        "avg_n_steps": 4.0,
+        "avg_latency_ms": 1.261
+      },
+      "pydantic-ai": {
+        "tool_call_accuracy": 1.0,
+        "final_answer_grounded": 0.3333,
+        "avg_n_steps": 4.0,
+        "avg_latency_ms": 0.746
+      },
+      "crewai": {
+        "tool_call_accuracy": 1.0,
+        "final_answer_grounded": 0.3333,
+        "avg_n_steps": 4.0,
+        "avg_latency_ms": 0.775
+      },
+      "microsoft-agent-framework": {
+        "tool_call_accuracy": 1.0,
+        "final_answer_grounded": 0.3333,
+        "avg_n_steps": 4.0,
+        "avg_latency_ms": 0.764
+      },
+      "openai-agents-sdk": {
+        "tool_call_accuracy": 1.0,
+        "final_answer_grounded": 0.3333,
+        "avg_n_steps": 4.0,
+        "avg_latency_ms": 0.747
+      },
+      "smolagents": {
+        "tool_call_accuracy": 1.0,
+        "final_answer_grounded": 0.3333,
+        "avg_n_steps": 4.0,
+        "avg_latency_ms": 0.979
+      }
+    }
+  }
+}

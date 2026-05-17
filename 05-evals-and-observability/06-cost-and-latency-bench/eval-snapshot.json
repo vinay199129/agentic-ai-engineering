@@ -1,0 +1,47 @@
+{
+  "technique": "cost-and-latency-bench",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T21:04:18Z",
+  "metrics": {
+    "n_queries": 5,
+    "demo_question_ids": [
+      "q01",
+      "q05",
+      "q11",
+      "q15",
+      "q23"
+    ],
+    "per_model": {
+      "openai/gpt-4o-mini": {
+        "avg_input_tokens": 534.2,
+        "avg_output_tokens": 30.6,
+        "avg_latency_ms": 320.0,
+        "cost_per_query_usd": 9.8e-05,
+        "pareto": "non-dominated"
+      },
+      "openai/gpt-4o": {
+        "avg_input_tokens": 534.2,
+        "avg_output_tokens": 30.6,
+        "avg_latency_ms": 540.0,
+        "cost_per_query_usd": 0.001641,
+        "pareto": "dominated"
+      },
+      "anthropic/claude-3-5-sonnet-20241022": {
+        "avg_input_tokens": 534.2,
+        "avg_output_tokens": 30.6,
+        "avg_latency_ms": 620.0,
+        "cost_per_query_usd": 0.002062,
+        "pareto": "dominated"
+      },
+      "groq/llama-3.1-70b-versatile": {
+        "avg_input_tokens": 534.2,
+        "avg_output_tokens": 30.6,
+        "avg_latency_ms": 180.0,
+        "cost_per_query_usd": 0.000339,
+        "pareto": "non-dominated"
+      }
+    },
+    "price_table_source": "static (see eval.py PANEL)"
+  }
+}

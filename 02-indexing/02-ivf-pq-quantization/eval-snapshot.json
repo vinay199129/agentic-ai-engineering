@@ -1,0 +1,30 @@
+{
+  "technique": "ivf-pq-quantization",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:40:44Z",
+  "metrics": {
+    "n_docs": 10,
+    "n_questions": 26,
+    "k": 3,
+    "config": {
+      "dims": 256,
+      "ivf_nlist": 3,
+      "pq_m": 8,
+      "pq_k_star": 4
+    },
+    "flat_recall@k": 0.8846,
+    "ivf_recall@k": {
+      "nprobe=1": 0.4615,
+      "nprobe=2": 0.8462,
+      "nprobe=3": 0.8846
+    },
+    "pq_recall@k": 0.7692,
+    "memory": {
+      "float32_bytes": 10240,
+      "pq_code_bytes": 80,
+      "codebook_bytes": 4096,
+      "compression_ratio_codes_only": 128.0
+    }
+  }
+}

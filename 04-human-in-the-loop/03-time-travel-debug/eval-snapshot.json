@@ -1,0 +1,45 @@
+{
+  "technique": "time-travel-debug",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-17T07:29:09Z",
+  "metrics": {
+    "n_questions": 3,
+    "averages": {
+      "checkpoint_history_coverage": 1.0,
+      "decision_fork_produced_alternative": 1.0,
+      "edit_fork_produced_alternative": 1.0,
+      "original_preserved_after_fork": 1.0,
+      "avg_latency_ms": 1.236
+    },
+    "per_question": [
+      {
+        "id": "q01",
+        "original_draft": "[synth-001] We present RA-MoE, a sparse mixture-of-experts architecture in which router logits are biased toward experts whose recent activation history minimizes inter-device communication.",
+        "original_published": "[synth-001] We present RA-MoE, a sparse mixture-of-experts architecture in which router logits are biased toward experts whose recent activation history minimizes inter-device communication.",
+        "fork_deny_published": null,
+        "fork_edit_published": "[edited] alternate timeline draft.",
+        "history_len": 5,
+        "latency_ms": 1.57
+      },
+      {
+        "id": "q23",
+        "original_draft": "[synth-002] Standard dense retrievers degrade on documents longer than their training context.",
+        "original_published": "[synth-002] Standard dense retrievers degrade on documents longer than their training context.",
+        "fork_deny_published": null,
+        "fork_edit_published": "[edited] alternate timeline draft.",
+        "history_len": 5,
+        "latency_ms": 1.11
+      },
+      {
+        "id": "q27",
+        "original_draft": "[synth-008] We extract activation steering vectors that increase a model's adherence to its system prompt in the presence of injected adversarial user instructions.",
+        "original_published": "[synth-008] We extract activation steering vectors that increase a model's adherence to its system prompt in the presence of injected adversarial user instructions.",
+        "fork_deny_published": null,
+        "fork_edit_published": "[edited] alternate timeline draft.",
+        "history_len": 5,
+        "latency_ms": 1.028
+      }
+    ]
+  }
+}

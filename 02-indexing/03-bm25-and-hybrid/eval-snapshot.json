@@ -1,0 +1,57 @@
+{
+  "technique": "bm25-and-hybrid",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T20:42:24Z",
+  "metrics": {
+    "n_docs": 10,
+    "n_questions": 26,
+    "config": {
+      "bm25_k1": 1.5,
+      "bm25_b": 0.75,
+      "dense_dims": 256,
+      "rrf_k": 60
+    },
+    "per_retriever": {
+      "tfidf": {
+        "recall@1": 0.9231,
+        "recall@3": 1.0,
+        "recall@5": 1.0
+      },
+      "bm25": {
+        "recall@1": 0.9231,
+        "recall@3": 1.0,
+        "recall@5": 1.0
+      },
+      "dense": {
+        "recall@1": 0.6923,
+        "recall@3": 0.8846,
+        "recall@5": 0.9615
+      },
+      "rrf": {
+        "recall@1": 0.8846,
+        "recall@3": 0.9615,
+        "recall@5": 1.0
+      },
+      "weighted_best": {
+        "recall@1": 0.9231,
+        "recall@3": 1.0,
+        "recall@5": 1.0
+      }
+    },
+    "alpha_sweep_recall@3": {
+      "alpha=0.00": 1.0,
+      "alpha=0.10": 1.0,
+      "alpha=0.20": 1.0,
+      "alpha=0.30": 1.0,
+      "alpha=0.40": 1.0,
+      "alpha=0.50": 0.9615,
+      "alpha=0.60": 0.9615,
+      "alpha=0.70": 0.9615,
+      "alpha=0.80": 0.9615,
+      "alpha=0.90": 0.9231,
+      "alpha=1.00": 0.8846
+    },
+    "alpha_star": 0.0
+  }
+}

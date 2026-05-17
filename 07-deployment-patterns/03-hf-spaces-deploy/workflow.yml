@@ -1,0 +1,52 @@
+name: Deploy to Hugging Face Space
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "07-deployment-patterns/03-hf-spaces-deploy/space/**"
+      - "07-deployment-patterns/01-streamlit-demo-template/**"
+      - "06-mcp/mcp_core.py"
+      - "shared/**"
+  workflow_dispatch: {}
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install huggingface_hub
+        run: pip install --quiet "huggingface_hub[cli]>=0.25"
+
+      - name: Stage Space payload
+        run: |
+          set -euo pipefail
+          mkdir -p .deploy/space
+          rsync -a 07-deployment-patterns/03-hf-spaces-deploy/space/ .deploy/space/
+          rsync -a 07-deployment-patterns/01-streamlit-demo-template/ .deploy/space/template/
+          rsync -a 06-mcp/ .deploy/space/mcp/
+          rsync -a shared/ .deploy/space/shared/
+
+      - name: Upload to Hugging Face Space
+        env:
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+          HF_USERNAME: ${{ vars.HF_USERNAME }}
+          HF_SPACE_NAME: ${{ vars.HF_SPACE_NAME }}
+        run: |
+          huggingface-cli upload \
+            "$HF_USERNAME/$HF_SPACE_NAME" \
+            .deploy/space \
+            . \
+            --repo-type=space \
+            --commit-message "Auto-deploy from ${{ github.sha }}"

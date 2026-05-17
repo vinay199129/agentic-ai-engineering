@@ -1,0 +1,49 @@
+[
+  {
+    "id": "happy",
+    "user_goal": "Find papers in the corpus that target inference latency reductions and summarise their mechanisms.",
+    "expected_tools": ["search_corpus", "summarise"],
+    "trace": [
+      {"role": "tool_call", "name": "search_corpus", "arguments": {"query": "inference latency reduction"}, "output_summary": "Returned synth-001 (RA-MoE) and synth-007 (Listwise-Aligned BGE)."},
+      {"role": "tool_call", "name": "summarise", "arguments": {"doc_ids": ["synth-001", "synth-007"]}, "output_summary": "Both papers reduce latency: RA-MoE via routing bias, Listwise-Aligned BGE by removing the reranker."},
+      {"role": "final_answer", "content": "RA-MoE biases router logits with an EMA of expert utilization to cut p99 decode latency 38%. Listwise-Aligned BGE distills a reranker's signal into the bi-encoder, halving query latency by removing the reranker."}
+    ]
+  },
+  {
+    "id": "wrong-tool",
+    "user_goal": "Translate the abstract of synth-005 into Spanish.",
+    "expected_tools": ["translate"],
+    "trace": [
+      {"role": "tool_call", "name": "search_corpus", "arguments": {"query": "synth-005"}, "output_summary": "Returned the abstract of synth-005."},
+      {"role": "final_answer", "content": "Found the abstract; here's the English text, please run a translator next."}
+    ]
+  },
+  {
+    "id": "wrong-args",
+    "user_goal": "Summarise synth-003.",
+    "expected_tools": ["summarise"],
+    "trace": [
+      {"role": "tool_call", "name": "summarise", "arguments": {"doc_ids": ["synth-030"]}, "output_summary": "Tool returned: document not found."},
+      {"role": "final_answer", "content": "I could not find synth-030 in the corpus."}
+    ]
+  },
+  {
+    "id": "off-topic",
+    "user_goal": "Compare AdaSpec and RA-MoE on latency mechanisms.",
+    "expected_tools": ["search_corpus", "summarise"],
+    "trace": [
+      {"role": "tool_call", "name": "search_corpus", "arguments": {"query": "AdaSpec"}, "output_summary": "Returned synth-004 (AdaSpec)."},
+      {"role": "tool_call", "name": "summarise", "arguments": {"doc_ids": ["synth-004"]}, "output_summary": "AdaSpec dynamically tunes draft length K."},
+      {"role": "final_answer", "content": "The weather in Munich tomorrow will be mostly sunny with highs around 18C."}
+    ]
+  },
+  {
+    "id": "missed-goal",
+    "user_goal": "Cite the exact p99 latency reduction RA-MoE reports.",
+    "expected_tools": ["search_corpus"],
+    "trace": [
+      {"role": "tool_call", "name": "search_corpus", "arguments": {"query": "RA-MoE latency"}, "output_summary": "Returned synth-001 (RA-MoE)."},
+      {"role": "final_answer", "content": "RA-MoE reduces latency. The exact number is somewhere in the paper."}
+    ]
+  }
+]

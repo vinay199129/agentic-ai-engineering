@@ -1,0 +1,18 @@
+{
+  "technique": "synthetic-eval-data",
+  "version": "0.1.0",
+  "dataset": "benchmarks/corpus/metadata.jsonl",
+  "run_id": "2026-05-16T21:00:24Z",
+  "metrics": {
+    "n_docs": 10,
+    "n_generated": 10,
+    "n_kept": 10,
+    "drop_empty": 0,
+    "drop_length": 0,
+    "drop_unsupported": 0,
+    "synthetic_recall@k": 1.0,
+    "golden_recall@k": 0.8846,
+    "calibration_gap": 0.1154,
+    "k": 3
+  }
+}

@@ -1,0 +1,132 @@
+{
+  "technique": "react-from-scratch",
+  "version": "0.1.0",
+  "dataset": "benchmarks/golden-qa/v1",
+  "run_id": "2026-05-16T21:42:08Z",
+  "metrics": {
+    "framework": "react-from-scratch",
+    "n_questions": 3,
+    "averages": {
+      "tool_call_accuracy": 1.0,
+      "final_answer_grounded": 0.3333,
+      "avg_n_steps": 4.0,
+      "avg_latency_ms": 0.894
+    },
+    "per_question": [
+      {
+        "id": "q01",
+        "n_steps": 4,
+        "latency_ms": 1.313,
+        "tool_accuracy": 1.0,
+        "grounded": true,
+        "trace": [
+          {
+            "role": "tool_call",
+            "name": "search_corpus",
+            "arguments": {
+              "query": "By how much does RA-MoE reduce p99 decode latency compared to standard learned routing?"
+            },
+            "output_summary": "Top hits: ['synth-001', 'synth-008']"
+          },
+          {
+            "role": "tool_call",
+            "name": "fetch_paper",
+            "arguments": {
+              "arxiv_id": "synth-001"
+            },
+            "output_summary": "Title: Routing-Aware Sparse Mixture-of-Experts for Latency-Bounded Inference"
+          },
+          {
+            "role": "tool_call",
+            "name": "cite",
+            "arguments": {
+              "arxiv_id": "synth-001",
+              "claim": "[synth-001] We present RA-MoE, a sparse mixture-of-experts architecture in which router logits are biased toward experts"
+            },
+            "output_summary": "supported=True overlap=0.909"
+          },
+          {
+            "role": "final_answer",
+            "content": "[synth-001] We present RA-MoE, a sparse mixture-of-experts architecture in which router logits are biased toward experts whose recent activation history minimizes inter-device communication."
+          }
+        ]
+      },
+      {
+        "id": "q23",
+        "n_steps": 4,
+        "latency_ms": 0.714,
+        "tool_accuracy": 1.0,
+        "grounded": false,
+        "trace": [
+          {
+            "role": "tool_call",
+            "name": "search_corpus",
+            "arguments": {
+              "query": "Which two papers in the corpus both rely on small assistant models to accelerate or improve a larger model's output?"
+            },
+            "output_summary": "Top hits: ['synth-002', 'synth-004']"
+          },
+          {
+            "role": "tool_call",
+            "name": "fetch_paper",
+            "arguments": {
+              "arxiv_id": "synth-002"
+            },
+            "output_summary": "Title: Hierarchical Attention for Million-Token Document Retrieval"
+          },
+          {
+            "role": "tool_call",
+            "name": "cite",
+            "arguments": {
+              "arxiv_id": "synth-002",
+              "claim": "[synth-002] Standard dense retrievers degrade on documents longer than their training context."
+            },
+            "output_summary": "supported=True overlap=0.833"
+          },
+          {
+            "role": "final_answer",
+            "content": "[synth-002] Standard dense retrievers degrade on documents longer than their training context."
+          }
+        ]
+      },
+      {
+        "id": "q27",
+        "n_steps": 4,
+        "latency_ms": 0.654,
+        "tool_accuracy": 1.0,
+        "grounded": false,
+        "trace": [
+          {
+            "role": "tool_call",
+            "name": "search_corpus",
+            "arguments": {
+              "query": "What does the corpus report about ColBERT's late-interaction retrieval performance?"
+            },
+            "output_summary": "Top hits: ['synth-008', 'synth-002']"
+          },
+          {
+            "role": "tool_call",
+            "name": "fetch_paper",
+            "arguments": {
+              "arxiv_id": "synth-008"
+            },
+            "output_summary": "Title: Steering Vectors for Robust Instruction Following Under Prompt Injection"
+          },
+          {
+            "role": "tool_call",
+            "name": "cite",
+            "arguments": {
+              "arxiv_id": "synth-008",
+              "claim": "[synth-008] We extract activation steering vectors that increase a model's adherence to its system prompt in the presenc"
+            },
+            "output_summary": "supported=True overlap=0.895"
+          },
+          {
+            "role": "final_answer",
+            "content": "[synth-008] We extract activation steering vectors that increase a model's adherence to its system prompt in the presence of injected adversarial user instructions."
+          }
+        ]
+      }
+    ]
+  }
+}
