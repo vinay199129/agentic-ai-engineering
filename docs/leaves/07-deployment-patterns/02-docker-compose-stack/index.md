@@ -1,6 +1,6 @@
 !!! info "`07-deployment-patterns/02-docker-compose-stack`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/07-deployment-patterns/02-docker-compose-stack)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/07-deployment-patterns/02-docker-compose-stack)
 
 **Headline metrics:** _no headline metric_
 

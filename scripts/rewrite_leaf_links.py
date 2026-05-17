@@ -44,7 +44,7 @@ PHASE_ONLY_RE = re.compile(
 )
 
 # `shared/` or `benchmarks/` package links — keep external (GitHub).
-GH_BASE = "https://github.com/your-handle/agentic-ai-engineering/tree/main"
+GH_BASE = "https://github.com/vinay199129/agentic-ai-engineering/tree/main"
 EXTERNAL_PKGS = ("shared", "benchmarks", "scripts", "tests")
 EXTERNAL_RE = re.compile(
     rf"\]\((\.\./){{1,3}}(?P<pkg>{'|'.join(EXTERNAL_PKGS)})/?(?P<rest>[^)]*)\)"
@@ -82,7 +82,7 @@ def _rewrite(text: str, depth: int) -> tuple[str, int]:
         repo = m.group("repo")
         rest = m.group("rest") or ""
         # The two deep-dive repos live under the same GitHub user.
-        return f"](https://github.com/your-handle/{repo}/tree/main/{rest})"
+        return f"](https://github.com/vinay199129/{repo}/tree/main/{rest})"
 
     new_text, n_leaf = LINK_RE.subn(_sub, text)
     new_text, n_phase = PHASE_ONLY_RE.subn(_phase_sub, new_text)

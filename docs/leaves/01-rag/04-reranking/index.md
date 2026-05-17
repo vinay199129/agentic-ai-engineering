@@ -1,6 +1,6 @@
 !!! info "`01-rag/04-reranking`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/01-rag/04-reranking)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/01-rag/04-reranking)
 
 **Headline metrics:** _no headline metric_
 
@@ -28,7 +28,7 @@ uv run python 01-rag/04-reranking/eval.py
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/01-rag/04-reranking/./eval-snapshot.json) for recall@1 pre / post each reranker.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/01-rag/04-reranking/./eval-snapshot.json) for recall@1 pre / post each reranker.
 
 ## References
 

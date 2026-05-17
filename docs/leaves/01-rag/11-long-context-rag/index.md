@@ -1,6 +1,6 @@
 !!! info "`01-rag/11-long-context-rag`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/01-rag/11-long-context-rag)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/01-rag/11-long-context-rag)
 
 **Headline metrics:** _no headline metric_
 
@@ -30,7 +30,7 @@ uv run python 01-rag/11-long-context-rag/eval.py
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/01-rag/11-long-context-rag/./eval-snapshot.json) for recall@{1,3,5} bare vs contextualized chunks on a 5-doc subset.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/01-rag/11-long-context-rag/./eval-snapshot.json) for recall@{1,3,5} bare vs contextualized chunks on a 5-doc subset.
 
 ## References
 

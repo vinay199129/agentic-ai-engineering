@@ -1,6 +1,6 @@
 !!! info "`04-human-in-the-loop/00-interrupt-and-resume`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/04-human-in-the-loop/00-interrupt-and-resume)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/04-human-in-the-loop/00-interrupt-and-resume)
 
 **Headline metrics:** _no headline metric_
 
@@ -29,7 +29,7 @@ No framework deps. Uses `04-human-in-the-loop/hitl.py` (the shared mini-runner).
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/04-human-in-the-loop/00-interrupt-and-resume/./eval-snapshot.json) — three demo questions, each
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/04-human-in-the-loop/00-interrupt-and-resume/./eval-snapshot.json) — three demo questions, each
 running search → draft → **interrupt** → resume → publish. Tracked metrics:
 `interrupt_fire_rate`, `human_decision_accuracy`, `publish_gating_accuracy`,
 `avg_latency_ms`.

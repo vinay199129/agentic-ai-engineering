@@ -72,7 +72,7 @@ The format: **problem you'll meet in production → which leaf to copy
 |---|---|---|
 | Global synthesis over many docs | [`01-rag/09-graph-rag`](leaves/01-rag/09-graph-rag/index.md) | Entities = services, error codes, components; relationships = "caused", "mitigated by" |
 | Hierarchical TL;DR | [`02-indexing/05-summary-tree-index`](leaves/02-indexing/05-summary-tree-index/index.md) | Roll up incident docs → weekly summaries → quarterly summaries |
-| Planner → researchers → synthesiser flow | [`03-agentic-frameworks/01-langgraph`](leaves/03-agentic-frameworks/01-langgraph/index.md) | Same shape as the [`multi-agent-research-system`](https://github.com/your-handle/multi-agent-research-system/tree/main/) deep-dive |
+| Planner → researchers → synthesiser flow | [`03-agentic-frameworks/01-langgraph`](leaves/03-agentic-frameworks/01-langgraph/index.md) | Same shape as the [`multi-agent-research-system`](https://github.com/vinay199129/multi-agent-research-system/tree/main/) deep-dive |
 
 ---
 

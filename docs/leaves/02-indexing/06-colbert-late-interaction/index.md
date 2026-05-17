@@ -1,6 +1,6 @@
 !!! info "`02-indexing/06-colbert-late-interaction`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/02-indexing/06-colbert-late-interaction)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/02-indexing/06-colbert-late-interaction)
 
 **Headline metrics:** _no headline metric_
 
@@ -30,7 +30,7 @@ No LLM calls.
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/02-indexing/06-colbert-late-interaction/./eval-snapshot.json) for `recall@{1,3,5}` of single-vector dense vs. late-interaction MaxSim plus the index size ratio (number of vectors stored).
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/02-indexing/06-colbert-late-interaction/./eval-snapshot.json) for `recall@{1,3,5}` of single-vector dense vs. late-interaction MaxSim plus the index size ratio (number of vectors stored).
 
 ## References
 

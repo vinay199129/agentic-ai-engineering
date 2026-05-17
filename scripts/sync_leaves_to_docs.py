@@ -125,8 +125,8 @@ def _rewrite_relative_links(text: str, leaf_rel: str) -> str:
       ``../../06-mcp/00-mcp-server-basics/index.md`` (resolves to mirrored page).
     - Anything else → GitHub blob URL fallback.
     """
-    gh_base = f"https://github.com/your-handle/agentic-ai-engineering/blob/main/{leaf_rel}"
-    gh_raw = f"https://raw.githubusercontent.com/your-handle/agentic-ai-engineering/main/{leaf_rel}"
+    gh_base = f"https://github.com/vinay199129/agentic-ai-engineering/blob/main/{leaf_rel}"
+    gh_raw = f"https://raw.githubusercontent.com/vinay199129/agentic-ai-engineering/main/{leaf_rel}"
 
     # Build a regex that catches cross-leaf relative links so they resolve inside the docs site.
     phases = "|".join(
@@ -195,7 +195,7 @@ def _write_leaf(leaf: Path) -> dict[str, Any]:
         f"!!! info \"`{leaf_rel}`\"\n"
         f"    {notebook_link}    "
         f"💻 [View source on GitHub]"
-        f"(https://github.com/your-handle/agentic-ai-engineering/tree/main/{leaf_rel})\n\n"
+        f"(https://github.com/vinay199129/agentic-ai-engineering/tree/main/{leaf_rel})\n\n"
         f"{headline_line}"
     )
 

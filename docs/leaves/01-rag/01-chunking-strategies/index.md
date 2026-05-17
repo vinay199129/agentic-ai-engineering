@@ -1,6 +1,6 @@
 !!! info "`01-rag/01-chunking-strategies`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/01-rag/01-chunking-strategies)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/01-rag/01-chunking-strategies)
 
 **Headline metrics:** _no headline metric_
 
@@ -31,7 +31,7 @@ The notebook uses no LLM calls — pure splitting + deterministic hash embedding
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/01-rag/01-chunking-strategies/./eval-snapshot.json) for chunk count / size / recall@3 per strategy.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/01-rag/01-chunking-strategies/./eval-snapshot.json) for chunk count / size / recall@3 per strategy.
 
 ## References
 

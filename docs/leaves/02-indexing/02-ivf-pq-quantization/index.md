@@ -1,6 +1,6 @@
 !!! info "`02-indexing/02-ivf-pq-quantization`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/02-indexing/02-ivf-pq-quantization)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/02-indexing/02-ivf-pq-quantization)
 
 **Headline metrics:** _no headline metric_
 
@@ -30,7 +30,7 @@ No LLM calls.
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/02-indexing/02-ivf-pq-quantization/./eval-snapshot.json) for: per-`nprobe` IVF recall, PQ approximation recall, and the memory ratio (original float32 vs PQ codes). At `nprobe=nlist` IVF degenerates to Flat (sanity check).
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/02-indexing/02-ivf-pq-quantization/./eval-snapshot.json) for: per-`nprobe` IVF recall, PQ approximation recall, and the memory ratio (original float32 vs PQ codes). At `nprobe=nlist` IVF degenerates to Flat (sanity check).
 
 ## References
 

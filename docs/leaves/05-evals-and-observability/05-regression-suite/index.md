@@ -1,6 +1,6 @@
 !!! info "`05-evals-and-observability/05-regression-suite`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/05-evals-and-observability/05-regression-suite)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/05-evals-and-observability/05-regression-suite)
 
 **Headline metrics:** _no headline metric_
 
@@ -29,7 +29,7 @@ uv run pytest 05-evals-and-observability/05-regression-suite/tests
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/05-evals-and-observability/05-regression-suite/./eval-snapshot.json) for: total snapshots tracked, total flat metrics, breakdown of higher-is-better vs lower-is-better classifications, and the result of comparing current snapshots against the committed `baseline.json`.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/05-evals-and-observability/05-regression-suite/./eval-snapshot.json) for: total snapshots tracked, total flat metrics, breakdown of higher-is-better vs lower-is-better classifications, and the result of comparing current snapshots against the committed `baseline.json`.
 
 ## References
 

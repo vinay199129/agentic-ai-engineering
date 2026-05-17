@@ -1,6 +1,6 @@
 !!! info "`01-rag/05-query-transformation`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/01-rag/05-query-transformation)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/01-rag/05-query-transformation)
 
 **Headline metrics:** _no headline metric_
 
@@ -29,7 +29,7 @@ uv run python 01-rag/05-query-transformation/eval.py
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/01-rag/05-query-transformation/./eval-snapshot.json) for recall@{1,3} per transformation strategy on the answerable subset of the golden Q&A.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/01-rag/05-query-transformation/./eval-snapshot.json) for recall@{1,3} per transformation strategy on the answerable subset of the golden Q&A.
 
 ## References
 

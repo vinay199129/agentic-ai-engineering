@@ -1,6 +1,6 @@
 !!! info "`02-indexing/03-bm25-and-hybrid`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/02-indexing/03-bm25-and-hybrid)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/02-indexing/03-bm25-and-hybrid)
 
 **Headline metrics:** _no headline metric_
 
@@ -31,7 +31,7 @@ No LLM calls. The notebook writes `fusion_sweep.png` for the α sweep.
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/02-indexing/03-bm25-and-hybrid/./eval-snapshot.json) for `recall@{1,3,5}` across BM25 / TF-IDF / dense / RRF / best-α weighted fusion, plus the `α*` that maximises recall@3 on the golden Q&A.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/02-indexing/03-bm25-and-hybrid/./eval-snapshot.json) for `recall@{1,3,5}` across BM25 / TF-IDF / dense / RRF / best-α weighted fusion, plus the `α*` that maximises recall@3 on the golden Q&A.
 
 ## References
 

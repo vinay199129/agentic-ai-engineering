@@ -1,6 +1,6 @@
 !!! info "`02-indexing/07-incremental-indexing`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/02-indexing/07-incremental-indexing)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/02-indexing/07-incremental-indexing)
 
 **Headline metrics:** _no headline metric_
 
@@ -30,7 +30,7 @@ No LLM calls.
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/02-indexing/07-incremental-indexing/./eval-snapshot.json) for: baseline recall, recall after deletes-with-tombstones, recall after adding new docs, and the recall cliff when half the index is re-embedded with a new model (seed change) — i.e., the mixed-embedder failure mode.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/02-indexing/07-incremental-indexing/./eval-snapshot.json) for: baseline recall, recall after deletes-with-tombstones, recall after adding new docs, and the recall cliff when half the index is re-embedded with a new model (seed change) — i.e., the mixed-embedder failure mode.
 
 ## References
 

@@ -1,6 +1,6 @@
 !!! info "`03-agentic-frameworks/01-langgraph`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/03-agentic-frameworks/01-langgraph)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/03-agentic-frameworks/01-langgraph)
 
 **Headline metrics:** `tool_call_accuracy`=1 · `final_answer_grounded`=0.333
 
@@ -32,7 +32,7 @@ The eval falls back to the shared offline solver when `langgraph` isn't installe
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/03-agentic-frameworks/01-langgraph/./eval-snapshot.json) for the four shared metrics (`tool_call_accuracy`, `final_answer_grounded`, `avg_n_steps`, `avg_latency_ms`) on the 3-question demo set.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/03-agentic-frameworks/01-langgraph/./eval-snapshot.json) for the four shared metrics (`tool_call_accuracy`, `final_answer_grounded`, `avg_n_steps`, `avg_latency_ms`) on the 3-question demo set.
 
 ## What this leaf intentionally skips
 

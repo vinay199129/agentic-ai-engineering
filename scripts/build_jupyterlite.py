@@ -164,7 +164,7 @@ def _root_readme() -> str:
         "OpenAI Agents SDK, Smolagents) need real installs and are not bundled.\n"
         "Use the Binder badges in their READMEs on GitHub instead.\n"
         "\n"
-        "Full repo: https://github.com/your-handle/agentic-ai-engineering\n"
+        "Full repo: https://github.com/vinay199129/agentic-ai-engineering\n"
     )
 
 

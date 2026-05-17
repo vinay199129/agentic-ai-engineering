@@ -1,6 +1,6 @@
 !!! info "`01-rag/02-embedding-comparison`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/01-rag/02-embedding-comparison)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/01-rag/02-embedding-comparison)
 
 **Headline metrics:** _no headline metric_
 
@@ -31,7 +31,7 @@ The notebook uses the deterministic hashing embedder with different seeds + dime
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/01-rag/02-embedding-comparison/./eval-snapshot.json) for per-configuration recall@k.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/01-rag/02-embedding-comparison/./eval-snapshot.json) for per-configuration recall@k.
 
 ## References
 

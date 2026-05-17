@@ -1,6 +1,6 @@
 !!! info "`01-rag/08-agentic-rag`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/01-rag/08-agentic-rag)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/01-rag/08-agentic-rag)
 
 **Headline metrics:** _no headline metric_
 
@@ -28,7 +28,7 @@ uv run python 01-rag/08-agentic-rag/eval.py
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/01-rag/08-agentic-rag/./eval-snapshot.json) — per-route counts on three example queries.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/01-rag/08-agentic-rag/./eval-snapshot.json) — per-route counts on three example queries.
 
 ## References
 

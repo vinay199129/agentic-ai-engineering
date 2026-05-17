@@ -1,6 +1,6 @@
 !!! info "`04-human-in-the-loop/03-time-travel-debug`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/04-human-in-the-loop/03-time-travel-debug)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/04-human-in-the-loop/03-time-travel-debug)
 
 **Headline metrics:** _no headline metric_
 

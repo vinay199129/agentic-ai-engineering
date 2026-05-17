@@ -1,6 +1,6 @@
 !!! info "`02-indexing/05-summary-tree-index`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/02-indexing/05-summary-tree-index)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/02-indexing/05-summary-tree-index)
 
 **Headline metrics:** _no headline metric_
 
@@ -30,7 +30,7 @@ The notebook uses cached LLM responses (`LLM_CACHE_ONLY=1`) by default. The eval
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/02-indexing/05-summary-tree-index/./eval-snapshot.json) for tree vs flat `recall@3` plus the cluster shape (how many docs per cluster).
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/02-indexing/05-summary-tree-index/./eval-snapshot.json) for tree vs flat `recall@3` plus the cluster shape (how many docs per cluster).
 
 ## References
 

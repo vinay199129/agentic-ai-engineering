@@ -1,6 +1,6 @@
 !!! info "`07-deployment-patterns/04-ts-vercel-ai-sdk-chat`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/07-deployment-patterns/04-ts-vercel-ai-sdk-chat)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/07-deployment-patterns/04-ts-vercel-ai-sdk-chat)
 
 **Headline metrics:** _no headline metric_
 

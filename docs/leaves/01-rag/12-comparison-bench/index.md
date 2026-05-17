@@ -1,6 +1,6 @@
 !!! info "`01-rag/12-comparison-bench`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/01-rag/12-comparison-bench)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/01-rag/12-comparison-bench)
 
 **Headline metrics:** _no headline metric_
 
@@ -27,4 +27,4 @@ No LLM calls; no API key needed.
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/01-rag/12-comparison-bench/./eval-snapshot.json) for the rolled-up table.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/01-rag/12-comparison-bench/./eval-snapshot.json) for the rolled-up table.

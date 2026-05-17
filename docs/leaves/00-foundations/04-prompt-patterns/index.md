@@ -1,6 +1,6 @@
 !!! info "`00-foundations/04-prompt-patterns`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/00-foundations/04-prompt-patterns)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/00-foundations/04-prompt-patterns)
 
 **Headline metrics:** _no headline metric_
 
@@ -31,7 +31,7 @@ The eval script writes `eval-snapshot.json` with structural-completeness checks 
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/00-foundations/04-prompt-patterns/./eval-snapshot.json) for the latest numbers.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/00-foundations/04-prompt-patterns/./eval-snapshot.json) for the latest numbers.
 
 ## References
 

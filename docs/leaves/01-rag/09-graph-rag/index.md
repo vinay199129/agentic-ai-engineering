@@ -1,6 +1,6 @@
 !!! info "`01-rag/09-graph-rag`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/01-rag/09-graph-rag)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/01-rag/09-graph-rag)
 
 **Headline metrics:** _no headline metric_
 
@@ -31,7 +31,7 @@ uv run python 01-rag/09-graph-rag/eval.py
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/01-rag/09-graph-rag/./eval-snapshot.json) — counts entities, edges, communities, and how many docs each community spans.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/01-rag/09-graph-rag/./eval-snapshot.json) — counts entities, edges, communities, and how many docs each community spans.
 
 ## References
 

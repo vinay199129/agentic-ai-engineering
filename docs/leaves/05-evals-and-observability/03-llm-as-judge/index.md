@@ -1,6 +1,6 @@
 !!! info "`05-evals-and-observability/03-llm-as-judge`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/05-evals-and-observability/03-llm-as-judge)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/05-evals-and-observability/03-llm-as-judge)
 
 **Headline metrics:** _no headline metric_
 
@@ -30,7 +30,7 @@ Cached LLM judges + deterministic fallbacks; runs offline.
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/05-evals-and-observability/03-llm-as-judge/./eval-snapshot.json) for: rubric-score histogram on a 5-pair fixture, pairwise win rate (raw vs position-swap-adjusted), and the **position-bias delta** that quantifies the cost of NOT swapping.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/05-evals-and-observability/03-llm-as-judge/./eval-snapshot.json) for: rubric-score histogram on a 5-pair fixture, pairwise win rate (raw vs position-swap-adjusted), and the **position-bias delta** that quantifies the cost of NOT swapping.
 
 ## References
 

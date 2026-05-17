@@ -1,6 +1,6 @@
 !!! info "`02-indexing/00-vector-db-comparison`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/02-indexing/00-vector-db-comparison)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/02-indexing/00-vector-db-comparison)
 
 **Headline metrics:** _no headline metric_
 
@@ -29,7 +29,7 @@ No LLM calls; runs anywhere.
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/02-indexing/00-vector-db-comparison/./eval-snapshot.json) for per-index `recall@{1,3,5}` and build-time-ms on the canonical 10-doc corpus. On a corpus this small the recall differences are mostly noise — the real point is that the framework supports plugging in a 500-doc or 50M-doc corpus and reading the same metrics back.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/02-indexing/00-vector-db-comparison/./eval-snapshot.json) for per-index `recall@{1,3,5}` and build-time-ms on the canonical 10-doc corpus. On a corpus this small the recall differences are mostly noise — the real point is that the framework supports plugging in a 500-doc or 50M-doc corpus and reading the same metrics back.
 
 ## References
 

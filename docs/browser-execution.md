@@ -138,7 +138,7 @@ the gh-pages branch story.
 4. Publish `site-lite/` alongside the MkDocs site via the existing
    `gh-pages` workflow. Add an "Open in JupyterLite" badge to each
    leaf README in the ✅ table above, pointing at:
-   `https://<your-handle>.github.io/agentic-ai-engineering/lite/lab/?path=<leaf>/notebook.ipynb`
+   `https://<vinay199129>.github.io/agentic-ai-engineering/lite/lab/?path=<leaf>/notebook.ipynb`
 
 ## How to publish a Binder badge (per-notebook)
 

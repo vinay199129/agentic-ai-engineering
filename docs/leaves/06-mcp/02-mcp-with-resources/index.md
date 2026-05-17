@@ -1,6 +1,6 @@
 !!! info "`06-mcp/02-mcp-with-resources`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/06-mcp/02-mcp-with-resources)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/06-mcp/02-mcp-with-resources)
 
 **Headline metrics:** _no headline metric_
 

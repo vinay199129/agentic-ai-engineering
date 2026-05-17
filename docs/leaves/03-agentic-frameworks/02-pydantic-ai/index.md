@@ -1,6 +1,6 @@
 !!! info "`03-agentic-frameworks/02-pydantic-ai`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/03-agentic-frameworks/02-pydantic-ai)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/03-agentic-frameworks/02-pydantic-ai)
 
 **Headline metrics:** `tool_call_accuracy`=1 · `final_answer_grounded`=0.333
 
@@ -31,7 +31,7 @@ CI uses the offline reference solver.
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/03-agentic-frameworks/02-pydantic-ai/./eval-snapshot.json) for the four shared metrics on the 3-question demo set.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/03-agentic-frameworks/02-pydantic-ai/./eval-snapshot.json) for the four shared metrics on the 3-question demo set.
 
 ## What this leaf intentionally skips
 

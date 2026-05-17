@@ -1,6 +1,6 @@
 !!! info "`05-evals-and-observability/04-synthetic-eval-data`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/05-evals-and-observability/04-synthetic-eval-data)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/05-evals-and-observability/04-synthetic-eval-data)
 
 **Headline metrics:** _no headline metric_
 
@@ -30,7 +30,7 @@ Uses cached LLM calls (`LLM_CACHE_ONLY=1`) by default; the deterministic fallbac
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/05-evals-and-observability/04-synthetic-eval-data/./eval-snapshot.json) for: `n_generated`, `n_filtered_out` per filter, and the **calibration gap** between synthetic-set retrieval recall@3 and golden-set recall@3 on the canonical corpus.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/05-evals-and-observability/04-synthetic-eval-data/./eval-snapshot.json) for: `n_generated`, `n_filtered_out` per filter, and the **calibration gap** between synthetic-set retrieval recall@3 and golden-set recall@3 on the canonical corpus.
 
 ## References
 

@@ -1,6 +1,6 @@
 !!! info "`02-indexing/01-hnsw-deep-dive`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/02-indexing/01-hnsw-deep-dive)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/02-indexing/01-hnsw-deep-dive)
 
 **Headline metrics:** _no headline metric_
 
@@ -30,7 +30,7 @@ No LLM calls. The notebook also writes `hnsw_layers.png` so you can eyeball the 
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/02-indexing/01-hnsw-deep-dive/./eval-snapshot.json) for the `ef_search` sweep: recall vs flat ground truth at `ef ∈ {1, 2, 4, 8, 16}`. With `M=4` on 10 vectors, `ef=8` already reaches 1.0; on a real 1M-vector corpus the gap between `ef=16` and `ef=200` becomes the recall/latency dial you actually tune.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/02-indexing/01-hnsw-deep-dive/./eval-snapshot.json) for the `ef_search` sweep: recall vs flat ground truth at `ef ∈ {1, 2, 4, 8, 16}`. With `M=4` on 10 vectors, `ef=8` already reaches 1.0; on a real 1M-vector corpus the gap between `ef=16` and `ef=200` becomes the recall/latency dial you actually tune.
 
 ## References
 

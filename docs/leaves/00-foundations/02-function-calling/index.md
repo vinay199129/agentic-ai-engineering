@@ -1,6 +1,6 @@
 !!! info "`00-foundations/02-function-calling`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/00-foundations/02-function-calling)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/00-foundations/02-function-calling)
 
 # Function calling
 

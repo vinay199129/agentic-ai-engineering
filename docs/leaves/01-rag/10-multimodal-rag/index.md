@@ -1,6 +1,6 @@
 !!! info "`01-rag/10-multimodal-rag`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/01-rag/10-multimodal-rag)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/01-rag/10-multimodal-rag)
 
 **Headline metrics:** _no headline metric_
 
@@ -32,7 +32,7 @@ Figures are written to `01-rag/10-multimodal-rag/figures/` (regenerated on every
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/01-rag/10-multimodal-rag/./eval-snapshot.json) for per-modality recall@k on the answerable Q&A.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/01-rag/10-multimodal-rag/./eval-snapshot.json) for per-modality recall@k on the answerable Q&A.
 
 ## References
 

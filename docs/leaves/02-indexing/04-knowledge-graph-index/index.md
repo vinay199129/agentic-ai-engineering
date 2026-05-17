@@ -1,6 +1,6 @@
 !!! info "`02-indexing/04-knowledge-graph-index`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/02-indexing/04-knowledge-graph-index)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/02-indexing/04-knowledge-graph-index)
 
 **Headline metrics:** _no headline metric_
 
@@ -30,7 +30,7 @@ The notebook uses cached LLM responses (`LLM_CACHE_ONLY=1`) by default so it run
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/02-indexing/04-knowledge-graph-index/./eval-snapshot.json) for: nodes / edges / average degree of the extracted graph, plus a *connectivity* metric — fraction of multi-hop questions for which `nx.shortest_path` reaches the named target entity.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/02-indexing/04-knowledge-graph-index/./eval-snapshot.json) for: nodes / edges / average degree of the extracted graph, plus a *connectivity* metric — fraction of multi-hop questions for which `nx.shortest_path` reaches the named target entity.
 
 ## References
 

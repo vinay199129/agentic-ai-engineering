@@ -1,6 +1,6 @@
 !!! info "`01-rag/06-self-rag`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/01-rag/06-self-rag)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/01-rag/06-self-rag)
 
 **Headline metrics:** _no headline metric_
 
@@ -30,7 +30,7 @@ uv run python 01-rag/06-self-rag/eval.py
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/01-rag/06-self-rag/./eval-snapshot.json) — compares refusal rate and answer-doc precision against naive RAG.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/01-rag/06-self-rag/./eval-snapshot.json) — compares refusal rate and answer-doc precision against naive RAG.
 
 ## References
 

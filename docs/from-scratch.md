@@ -13,7 +13,7 @@ replaces, and what understanding it gives you.
 
 ## 1. `shared/llm.py` — provider-agnostic LLM shim with deterministic cache
 
-- **File:** [`shared/llm.py`](https://github.com/your-handle/agentic-ai-engineering/tree/main/shared/) — **276 lines**
+- **File:** [`shared/llm.py`](https://github.com/vinay199129/agentic-ai-engineering/tree/main/shared/) — **276 lines**
 - **Replaces:** parts of `litellm`, the OpenAI/Anthropic SDKs' typed
   surface, and any "LLM cache" middleware (`langchain.cache`,
   `gptcache`, etc.).

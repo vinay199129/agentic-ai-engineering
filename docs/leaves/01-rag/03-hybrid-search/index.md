@@ -1,6 +1,6 @@
 !!! info "`01-rag/03-hybrid-search`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/01-rag/03-hybrid-search)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/01-rag/03-hybrid-search)
 
 **Headline metrics:** _no headline metric_
 
@@ -30,7 +30,7 @@ No LLM calls; runs anywhere.
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/01-rag/03-hybrid-search/./eval-snapshot.json) for per-retriever recall@{1,3,5}. Compare against [`../00-naive-rag/eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/01-rag/03-hybrid-search/../00-naive-rag/eval-snapshot.json) for the dense-only baseline.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/01-rag/03-hybrid-search/./eval-snapshot.json) for per-retriever recall@{1,3,5}. Compare against [`../00-naive-rag/eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/01-rag/03-hybrid-search/../00-naive-rag/eval-snapshot.json) for the dense-only baseline.
 
 ## References
 

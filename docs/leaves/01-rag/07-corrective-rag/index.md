@@ -1,6 +1,6 @@
 !!! info "`01-rag/07-corrective-rag`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/01-rag/07-corrective-rag)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/01-rag/07-corrective-rag)
 
 **Headline metrics:** _no headline metric_
 
@@ -32,7 +32,7 @@ The notebook uses a mocked web tool — swap in Tavily / Bing / Brave for real u
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/01-rag/07-corrective-rag/./eval-snapshot.json) for per-verdict accuracy on the answerable + unanswerable subsets.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/01-rag/07-corrective-rag/./eval-snapshot.json) for per-verdict accuracy on the answerable + unanswerable subsets.
 
 ## References
 

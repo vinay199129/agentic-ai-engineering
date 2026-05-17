@@ -1,6 +1,6 @@
 !!! info "`05-evals-and-observability/06-cost-and-latency-bench`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/05-evals-and-observability/06-cost-and-latency-bench)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/05-evals-and-observability/06-cost-and-latency-bench)
 
 **Headline metrics:** _no headline metric_
 
@@ -30,7 +30,7 @@ Runs offline. Latency measured against the JSONL cache hits when LLM_CACHE_ONLY=
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/05-evals-and-observability/06-cost-and-latency-bench/./eval-snapshot.json) for per-model: average input/output tokens, $/query, ms/query, and the dominated/dominant pareto label (a model is *dominated* if another panel model wins on both axes).
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/05-evals-and-observability/06-cost-and-latency-bench/./eval-snapshot.json) for per-model: average input/output tokens, $/query, ms/query, and the dominated/dominant pareto label (a model is *dominated* if another panel model wins on both axes).
 
 ## References
 

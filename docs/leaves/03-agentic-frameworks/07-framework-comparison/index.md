@@ -1,6 +1,6 @@
 !!! info "`03-agentic-frameworks/07-framework-comparison`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/03-agentic-frameworks/07-framework-comparison)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/03-agentic-frameworks/07-framework-comparison)
 
 **Headline metrics:** `tool_call_accuracy`=1 · `final_answer_grounded`=0.333
 
@@ -27,7 +27,7 @@ Produces `eval-snapshot.json` + `leaderboard.md`.
 
 ## Key results
 
-See [`leaderboard.md`](https://github.com/your-handle/agentic-ai-engineering/blob/main/03-agentic-frameworks/07-framework-comparison/./leaderboard.md) for the per-framework table and [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/03-agentic-frameworks/07-framework-comparison/./eval-snapshot.json) for the structured form.
+See [`leaderboard.md`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/03-agentic-frameworks/07-framework-comparison/./leaderboard.md) for the per-framework table and [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/03-agentic-frameworks/07-framework-comparison/./eval-snapshot.json) for the structured form.
 
 ## References
 

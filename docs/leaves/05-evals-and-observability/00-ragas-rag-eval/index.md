@@ -1,6 +1,6 @@
 !!! info "`05-evals-and-observability/00-ragas-rag-eval`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/05-evals-and-observability/00-ragas-rag-eval)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/05-evals-and-observability/00-ragas-rag-eval)
 
 **Headline metrics:** `context_recall`=0.827 · `faithfulness`=1
 
@@ -31,7 +31,7 @@ The notebook + eval call the four metrics via `shared.llm.complete()`. With `LLM
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/05-evals-and-observability/00-ragas-rag-eval/./eval-snapshot.json) for: per-metric average across the answerable golden Q&A subset (q01–q26), plus a per-question breakdown for a 5-question demo set.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/05-evals-and-observability/00-ragas-rag-eval/./eval-snapshot.json) for: per-metric average across the answerable golden Q&A subset (q01–q26), plus a per-question breakdown for a 5-question demo set.
 
 ## References
 

@@ -1,6 +1,6 @@
 !!! info "`06-mcp/01-mcp-client-in-agent`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/06-mcp/01-mcp-client-in-agent)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/06-mcp/01-mcp-client-in-agent)
 
 **Headline metrics:** `tool_call_accuracy`=1 · `final_answer_grounded`=0.333
 

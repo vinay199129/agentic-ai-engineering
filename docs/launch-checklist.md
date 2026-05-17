@@ -58,7 +58,7 @@ do.
 > no API keys. Curious whether that pattern travels well to other
 > people's projects.
 >
-> Repo: <https://github.com/your-handle/agentic-ai-engineering>
+> Repo: <https://github.com/vinay199129/agentic-ai-engineering>
 
 ### B2. LinkedIn
 
@@ -83,7 +83,7 @@ do.
 > If you build or hire for agentic AI roles, the skills matrix in
 > the README is the fastest way in.
 >
-> 🔗 <https://github.com/your-handle/agentic-ai-engineering>
+> 🔗 <https://github.com/vinay199129/agentic-ai-engineering>
 
 ### B3. X / Twitter thread
 
@@ -120,7 +120,7 @@ do.
 
 > 8/ Free, MIT, contributions welcome. Skills matrix in the README
 > is the fastest way to find what's interesting to you.
-> <https://github.com/your-handle/agentic-ai-engineering>
+> <https://github.com/vinay199129/agentic-ai-engineering>
 
 ## Phase C — Communities to post to (in order)
 
@@ -166,9 +166,9 @@ In each of:
 add a top-of-README block:
 
 > **Built on patterns from
-> [agentic-ai-engineering](https://github.com/your-handle/agentic-ai-engineering).**
-> See the [framework comparison deep-dive](https://github.com/your-handle/agentic-ai-engineering/blob/main/docs/deep-dives/04-framework-comparison.md)
-> and the [MCP deep-dive](https://github.com/your-handle/agentic-ai-engineering/blob/main/docs/deep-dives/05-mcp.md)
+> [agentic-ai-engineering](https://github.com/vinay199129/agentic-ai-engineering).**
+> See the [framework comparison deep-dive](https://github.com/vinay199129/agentic-ai-engineering/blob/main/docs/deep-dives/04-framework-comparison.md)
+> and the [MCP deep-dive](https://github.com/vinay199129/agentic-ai-engineering/blob/main/docs/deep-dives/05-mcp.md)
 > for the architectural rationale behind the choices in this repo.
 
 That single block is the highest-bandwidth signal that the three

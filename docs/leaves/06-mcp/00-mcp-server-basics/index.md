@@ -1,6 +1,6 @@
 !!! info "`06-mcp/00-mcp-server-basics`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/06-mcp/00-mcp-server-basics)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/06-mcp/00-mcp-server-basics)
 
 **Headline metrics:** `canonical_method_coverage`=1 · `schema_validity_rate`=1
 

@@ -1,6 +1,6 @@
 !!! info "`05-evals-and-observability/01-ragas-agent-eval`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/05-evals-and-observability/01-ragas-agent-eval)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/05-evals-and-observability/01-ragas-agent-eval)
 
 **Headline metrics:** `tool_call_accuracy`=0.8
 
@@ -33,7 +33,7 @@ No live tools or LLMs required — the fixture is committed in `traces.json` so 
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/05-evals-and-observability/01-ragas-agent-eval/./eval-snapshot.json) for per-trace breakdown of the three metrics on the synthetic fixture, plus average rates.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/05-evals-and-observability/01-ragas-agent-eval/./eval-snapshot.json) for per-trace breakdown of the three metrics on the synthetic fixture, plus average rates.
 
 ## References
 

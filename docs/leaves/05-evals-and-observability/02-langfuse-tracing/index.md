@@ -1,6 +1,6 @@
 !!! info "`05-evals-and-observability/02-langfuse-tracing`"
     📓 [Open the notebook](notebook.ipynb)  
-    💻 [View source on GitHub](https://github.com/your-handle/agentic-ai-engineering/tree/main/05-evals-and-observability/02-langfuse-tracing)
+    💻 [View source on GitHub](https://github.com/vinay199129/agentic-ai-engineering/tree/main/05-evals-and-observability/02-langfuse-tracing)
 
 **Headline metrics:** _no headline metric_
 
@@ -40,7 +40,7 @@ Deploying real Langfuse will be covered in `07-deployment-patterns/02-docker-com
 
 ## Key results
 
-See [`eval-snapshot.json`](https://github.com/your-handle/agentic-ai-engineering/blob/main/05-evals-and-observability/02-langfuse-tracing/./eval-snapshot.json) for trace-structure invariants (n_spans, n_scores, ordering correctness, average span duration) on a 3-question demo run.
+See [`eval-snapshot.json`](https://github.com/vinay199129/agentic-ai-engineering/blob/main/05-evals-and-observability/02-langfuse-tracing/./eval-snapshot.json) for trace-structure invariants (n_spans, n_scores, ordering correctness, average span duration) on a 3-question demo run.
 
 ## References
 
